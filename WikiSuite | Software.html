@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en" id="page_82">
+<head>
+	
+	<base href="http://wikisuite.org/Software">
+<!--Latest IE Compatibility-->
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="generator" content="Tiki Wiki CMS Groupware - https://tiki.org">
+
+<meta content="http://wikisuite.org/" name="twitter:domain"> 
+
+
+			<link rel="canonical" href="http://wikisuite.org/Software">
+		<meta content="http://wikisuite.org/Software" property="og:url">
+	
+	<meta name="keywords" content="WikiSuite, Tiki Wiki CMS Groupware, ClearOS, Openfire Meetings / Jitsi Meet, Syncthing, Elasticsearch / Kibana, FusionPBX / FreeSWITCH, Kaltura, Xibo, Kimchi / KVM.  ">
+
+		<meta name="description" content="The most comprehensive and integrated Free / Libre / Open Source enterprise software suite." property="og:description">
+	<meta name="twitter:description" content="The most comprehensive and integrated Free / Libre / Open Source enterprise software suite.">
+
+<meta content="WikiSuite" property="og:site_name">
+<meta content="WikiSuite" name="twitter:site">
+
+
+
+<title>WikiSuite | Software</title>
+
+
+<meta property="og:title" content="WikiSuite | Software">
+
+<meta name="twitter:title" content="WikiSuite | Software">
+
+			<meta content="website" property="og:type">
+	
+
+<meta name="twitter:card" content="summary">
+
+						
+
+	<link rel="alternate" type="application/rss+xml" title='WikiSuite blog' href="tiki-blogs_rss.php?ver=5">
+<!--[if lt IE 9]>
+	<script src="vendor_bundled/vendor/afarkas/html5shiv/dist/html5shiv.min.js" type="text/javascript"></script>
+<![endif]-->
+		
+<meta name="msapplication-config" content="themes/wikisuite/favicons/browserconfig.xml">
+
+<link rel="icon" href="themes/wikisuite/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="themes/wikisuite/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="manifest" href="themes/wikisuite/favicons/manifest.json">
+<link rel="shortcut icon" href="themes/wikisuite/favicons/favicon.ico">
+<link rel="stylesheet" href="temp/public/minified_72016ca9c1cf83a672fffa58c0cc2f7b.css" type="text/css">
+<style type="text/css"><!--
+/* css 0 */
+@media (min-width: 1200px) { .container { max-width:1170px; } }
+.ui-autocomplete-loading { background: white url("img/spinner.gif") right center no-repeat; }
+.sitesubtitle {font-size: 21px}
+
+.install {
+    clear: both;
+    padding: 20px 50px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    border: 1px solid #d6d8d8;
+    overflow: hidden;
+}
+
+.install-text {
+    float: left;
+    width: 82%;
+}
+
+
+.btn-install {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.bg_grey { background-color: #f4f4f4; }
+.bg_color { background-color: #192263; }
+.space { padding: 22px; }
+
+#cookie_consent_div { position:fixed; width:100%; top:0; margin:0; z-index:100; }
+
+.rounded {
+    border-radius:1rem!important
+}
+.pagetitle {display: none;}
+.titletop {display: none;}
+.plugin-mouseover-anchor:not([href]) { border-bottom: 1px dotted; color: inherit; cursor: help; text-decoration: none; }
+-->
+</style>
+	<link rel="apple-touch-icon" sizes="57x57" href="themes/wikisuite/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="themes/wikisuite/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="themes/wikisuite/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="themes/wikisuite/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="themes/wikisuite/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="themes/wikisuite/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="themes/wikisuite/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="themes/wikisuite/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="themes/wikisuite/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="themes/wikisuite/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="themes/wikisuite/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="themes/wikisuite/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="themes/wikisuite/favicons/favicon-16x16.png">
+<link rel="manifest" href="themes/wikisuite/favicons/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="themes/wikisuite/favicons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<meta name="google-site-verification" content="8j4GUNhdXRjbltSH_Iuq3xY4SO2N38Q44pCXspVwrvA" />
+
+<style type="text/css">
+
+/* Prevent target anchors from being covered by fixed top navbar */
+h1:target:before,
+h2:target:before,
+h3:target:before,
+h4:target:before,
+h5:target:before,
+h6:target:before {
+  content: "";
+  display: block;
+  height: 100px; /* fixed header height*/
+  margin: -100px 0 0; /* negative fixed header height */
+}
+</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class=" tiki  tiki-index tiki_wiki_page fixed_width  layout_classic grp_Anonymous homepage en">
+
+
+
+
+
+
+
+	<div id="ajaxLoading">Loading...</div>
+<div id="ajaxLoadingBG">&nbsp;</div>
+<div id="ajaxDebug"></div>
+
+
+				<div class="header_outer" id="header_outer">
+			<div class="header_container">
+				<div class="container container-std">
+					<header class="header page-header row" id="page-header">
+						<nav class="content clearfix modules top_modules d-flex justify-content-between w-100 navbar-dark bg-dark" id="top_modules">
+	
+
+
+
+
+						<div id="module_2" style=""
+						 class="module box-logo">
+						<div id="mod-logotop1">
+														<div  style="background-color: transparent;" class="position-relative float-left sitelogo"><a href="./" title="The most comprehensive and integrated Free / Libre / Open Source enterprise software suite ever developed"><img src="themes/wikisuite/images/logo-wikisuitev2.png" alt="WikiSuite logo" style="max-width: 100%; height: auto"></a></div>
+																			
+							</div>
+	</div>
+
+
+
+
+
+
+
+						<div id="module_14" style=""
+						 class="module bottom-menu box-menu">
+						<div id="mod-menutop2">
+																				<nav class="navbar navbar-expand-lg  navbar-dark bg-dark " role="navigation">
+														<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mod-menutop2 .navbar-collapse" aria-controls="mod-menutop2" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+					<div class="collapse navbar-collapse">
+												<ul class="navbar-nav mr-auto">
+						<li class="nav-item dropdown solutions">
+				<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+					Solutions				</a>
+				<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="Email-and-Calendar">Email and Calendar</a></li>
+											<li><a class="dropdown-item" href="Chat-and-Video-Conference">Chat and Video Conference</a></li>
+											<li><a class="dropdown-item" href="OS-and-Network">OS and Network</a></li>
+											<li><a class="dropdown-item" href="Security">Security</a></li>
+											<li><a class="dropdown-item" href="Commerce">Commerce</a></li>
+											<li><a class="dropdown-item" href="BPM-and-Analytics">BPM and Analytics</a></li>
+											<li><a class="dropdown-item" href="Web-and-Intranet">Web and Intranet</a></li>
+											<li><a class="dropdown-item" href="Files-and-Sync">Files and Sync</a></li>
+									</ul>
+			</li>
+								<li class="nav-item "><a class="nav-link" href="blog1">Blog</a></li>
+								<li class="nav-item dropdown ">
+				<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+					About				</a>
+				<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="Alternatives">Alternatives</a></li>
+											<li><a class="dropdown-item" href="Mission-Vision-Values">Mission</a></li>
+											<li><a class="dropdown-item" href="FAQ">FAQ</a></li>
+											<li><a class="dropdown-item" href="To-do">To do</a></li>
+									</ul>
+			</li>
+								<li class="nav-item "><a class="nav-link" href="Contact">Contact</a></li>
+								<li class="nav-item download btn"><a class="nav-link" href="How-to-install-WikiSuite">Download + Install</a></li>
+								<li class="nav-item login btn"><a class="nav-link" href="tiki-login.php">Log in / Register</a></li>
+			</ul>
+
+					</div>
+							</nav>
+			
+																			
+							</div>
+	</div>
+
+
+ <div id="module_19" style="" class="module box-search"><div id="mod-searchtop5"><form id="search-module-form1" method="get" action="tiki-searchindex.php" style="position: relative;"><div class="form-group"><input style="min-width: 4rem;" placeholder="Find" class="form-control my-1" id="search_mod_input_1" name="filter~content" type="text" accesskey="s" value=""><label class="sr-only" for="search_mod_input_1">Find</label><label class="col-form-label" for="filterType"> in&nbsp; </label><div class="col-auto"><select id="filterType" name="filter~type" class="form-control my-1" ><option value="">Entire Site</option><option value="wiki page">Wiki Pages</option><option value="blog post">Blog Posts</option><option value="file">Files</option><option value="trackeritem">Trackers</option></select></div><div class="btn-group my-1"><input type = "submit" class="btn btn-info btn-sm tips btn-secondary button_default btn-sm" name = "search" value = "Go" title="Search|Search for text throughout the site." onclick = "$('#search-module-form1').attr('action', 'tiki-searchindex.php').attr('page_selected','');" /></div><input type="hidden" name="boolean" value="on" /><input type="hidden" name="boolean_last" value="y" /></div></form></div></div> 
+</nav>
+					</header>
+				</div>
+			</div>
+		</div>
+		
+	<div class="middle_outer" id="middle_outer" >
+		<div class="container container-std middle" id="middle">
+			<div class="topbar navbar-dark bg-dark row" id="topbar">
+				<nav class="content clearfix modules topbar_modules d-flex justify-content-between w-100 navbar-dark bg-dark" id="topbar_modules">
+	
+</nav>
+			</div>
+			<div class="row row-middle" id="row-middle">
+								<div class="d-flex flex-row w-100">
+					<div class="col col1 col-md-12" id="col1 pb-4">
+
+																				
+
+<div id="tikifeedback">
+	</div>
+
+							
+			
+<div class="wikitopline clearfix" style="clear: both;">
+	<div class="content">
+					<div class="wikiinfo float-left">
+				
+				
+				
+
+											</div>
+		 
+					<div class="wikiinfo float-left" id="pdfinfo" style="display:none">
+				<div class="alert alert-info" style="width:500px"><h4><span class="icon icon-information fas fa-info-circle fa-fw "></span>&nbsp;<span class="rboxtitle">Please wait</span></h4><div class="rboxcontent" style="display: inline"><span class="fas fa-circle-notch fa-spin" style="font-size:24px"></span> The PDF is being prepared, please wait...</div></div>
+			</div>
+			</div> 
+</div> 
+
+	<div class="wikiactions_wrapper clearfix">
+	<div class="wikiactions float-sm-right mb-2"><div class="btn-group ml-2"><div class="btn-group page_actions" role="group"><a class="btn btn-info btn-sm dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" href="#" title="Page actions"><span class="icon icon-menu-extra fas fa-chevron-down "   ></span></a><div class="dropdown-menu dropdown-menu-right"><h6 class="dropdown-header">Page actions</h6><div class="dropdown-divider"></div><a class="dropdown-item" href="tiki-print.php?page=Software&amp;display=pdf"><span class="icon icon-pdf far fa-file-pdf "   ></span>  PDF</a><a class="dropdown-item" href="tiki-print.php?page=Software"><span class="icon icon-print fas fa-print "   ></span> Print</a></div></div></div></div>
+	</div>
+	
+							
+				
+					<h1 class="pagetitle"><a class="" title="refresh" href="Software">Software</a></h1>
+		
+	
+							
+							
+			
+	
+				
+	
+	
+	<article id="top" class="wikitext clearfix">
+					
+			
+			
+					 
+
+		
+		<div id="page-data" class="clearfix">
+										<pdfsettings orientation='P' pagesize='Letter' toc='n' toclinks='n' ></pdfsettings>
+<div class='row intro'><div class='container'><div class='d-flex flex-row flex-wrap w-100'>
+<div class='col-lg-6'><img src="dl179?display"  width="912" height="914" alt="Wikisuitev3" class="regImage pluginImg179 img-fluid" /></div>
+<div class='col-lg-6'>
+<h2 style="text-align: center;" class="showhide_heading" id="The_most_comprehensive_and_integrated_Free_Libre_Open_Source_enterprise_software_suite">  The most comprehensive<br />and integrated<br />Free / Libre / Open Source<br />enterprise software&nbsp;suite&nbsp;<a href="#The_most_comprehensive_and_integrated_Free_Libre_Open_Source_enterprise_software_suite" class="heading-link"><span class="icon icon-link fas fa-link "   ></span></a></h2>
+<p>WikiSuite is especially suited to knowledge-centric organizations and offers most (80%+) of the data and information management features all organizations need
+</p>
+
+<ul class="fa-ul">
+<li><span class="fa-li fa fa-check"></span> <a id="mo1-link"  class="plugin-mouseover-anchor">Free / Libre / Open Source Software (FLOSS)</a><span id="mo1" class="plugin-mouseover" style="width: 400px;    ">No software license fee, full access to the source code, etc.</span> </li>
+<li><span class="fa-li fa fa-check"></span>Self-host or Software as a Service (SaaS)</li>
+<li><span class="fa-li fa fa-check"></span><a id="mo2-link"  class="plugin-mouseover-anchor">Verifiable Security</a><span id="mo2" class="plugin-mouseover" style="width: 400px;    ">You can self host, you can audit the code.</span></li>
+<li><span class="fa-li fa fa-check"></span><a id="mo3-link"  class="plugin-mouseover-anchor">Community-managed</a><span id="mo3" class="plugin-mouseover" style="width: 400px;    ">You can get involved and influence the roadmap!</span></li>
+<li><span class="fa-li fa fa-check"></span> <a id="mo4-link"  class="plugin-mouseover-anchor">Extensive web admin panels</a><span id="mo4" class="plugin-mouseover" style="width: 400px;    ">Power Users can configure the tools without the need for software developers or to edit configuration files.</span></li>
+<li><span class="fa-li fa fa-check"></span><a id="mo5-link"  class="plugin-mouseover-anchor">Paid support is available</a><span id="mo5" class="plugin-mouseover" style="width: 400px;    ">This is optional of course!  The architects of the solution are available for consulting (Support, sponsored development, training, configuration and customization, business consulting, etc.)</span></li>
+<li><span class="fa-li fa fa-check"></span>No lock-in</li>
+<li><span class="fa-li fa fa-check"></span><a id="mo6-link"  class="plugin-mouseover-anchor">Integrated and Extensible Solution</a><span id="mo6" class="plugin-mouseover" style="width: 400px;    ">Integrated for higher efficiency <br /> <br /> Extensible to cover future growth and unforeseen needs.</span></li>
+</ul>
+
+</div>
+</div></div></div>
+<p>
+</p>
+<div class='row updates'><div class='container'>
+<div class='col-sm-6'><img src="dl169?display"  width="161" height="119" alt="Computer" class="regImage pluginImg169 img-fluid" />
+<div class='data'>
+<h2 class="showhide_heading" id="Your_data_is_priceless._Stay_in_control_">  Your data is priceless.<br />Stay in&nbsp;control!&nbsp;<a href="#Your_data_is_priceless._Stay_in_control_" class="heading-link"><span class="icon icon-link fas fa-link "   ></span></a></h2>
+<p>WikiSuite empowers organizations to better manage, secure and use their information, to become data-driven, and achieve their optimal performance <span class="icon icon-arrow-right fas fa-arrow-right "   ></span> <a href="Mission-Vision-Values" title="Mission Vision Values" class="wiki wiki_page">Our mission</a>.
+</p>
+
+<div style="display: inline-block;  max-width: 100%; width:472px;">	<a href="http://tikitrackers.org" class="internal"  target="_blank" title="TikiTrackers.org">		<img src="dl874?display&x=470&y=470"  width="470" height="470" align="left" style="float:left;" alt="TikiTrackers.org" class="rounded regImage pluginImg874 img-fluid" title="TikiTrackers.org" />	</a>	<div class="mini" style="max-width: 100%; width:470px;">		<div class="thumbcaption">TikiTrackers.org		</div>	</div></div>
+</div></div>
+<div class='col-sm-6'>
+<h2 class="showhide_heading" id="Latest_updates">  Latest updates&nbsp;<a href="#Latest_updates" class="heading-link"><span class="icon icon-link fas fa-link "   ></span></a></h2>
+<table class="wikitable table table-striped table-hover"><tr><td class="wikicell"  colspan="2"> </td></tr><tr><td class="wikicell" >2018-09-21 </td><td class="wikicell" > <a class="wiki external" target="_blank" href="http://wiki.softwarefreedomday.org/2019/Canada/Montréal/FACIL" rel="external">Presentation: State of WikiSuite in 2019 (in French) by Marc Laporte, project founder.</a><span class="icon icon-link-external fas fa-external-link-alt "   ></span> <a href="State-of-WikiSuite-in-2019-presentation-in-French" title="State of WikiSuite in 2019 presentation (in French)" class="wiki wiki_page">slides</a>, <a class="wiki external" target="_blank" href="https://www.youtube.com/watch?v=4GCuKQ0TbHU" rel="external">video (in French)</a><span class="icon icon-link-external fas fa-external-link-alt "   ></span>   (Translation forthcoming)</td></tr><tr><td class="wikicell" >2019-09-03  </td><td class="wikicell" > <a class="wiki external" target="_blank" href="https://github.com/syncthing/syncthing/releases/" rel="external">Syncthing v1.2.2 Released</a><span class="icon icon-link-external fas fa-external-link-alt "   ></span></td></tr><tr><td class="wikicell" >2019-08-16 </td><td class="wikicell" > <a class="wiki external" target="_blank" href="https://fastmail.blog/2019/08/16/jmap-new-email-open-standard/" rel="external">The specifications for JMAP Email have been published by the Internet Engineering Task Force (IETF), marking a big victory for email tools now and in the future.</a><span class="icon icon-link-external fas fa-external-link-alt "   ></span></td></tr><tr><td class="wikicell" >2019-08-12  </td><td class="wikicell" > <a class="wiki external" target="_blank" href="https://www.igniterealtime.org/projects/openfire/" rel="external">Openfire 4.4.1 Released</a><span class="icon icon-link-external fas fa-external-link-alt "   ></span></td></tr><tr><td class="wikicell" >2019-07-31  </td><td class="wikicell" > <a class="wiki external" target="_blank" href="https://www.elastic.co/blog/elasticsearch-7-3-0-released" rel="external">Elasticsearch 7.3.0 Released</a><span class="icon icon-link-external fas fa-external-link-alt "   ></span></td></tr><tr><td class="wikicell" >2019-06-28  </td><td class="wikicell" > <a class="wiki external" target="_blank" href="https://discourse.igniterealtime.org/t/openfire-4-4-0-release/85474" rel="external">Openfire 4.4.0 Released</a><span class="icon icon-link-external fas fa-external-link-alt "   ></span></td></tr><tr><td class="wikicell" >2019-06-26  </td><td class="wikicell" > <a class="wiki external" target="_blank" href="https://tiki.org/article461-Tiki-20-0-codename-Tarazed-Released" rel="external">Tiki 20.0 released</a><span class="icon icon-link-external fas fa-external-link-alt "   ></span></td></tr><tr><td class="wikicell" >2019-06-25 </td><td class="wikicell" > <a class="wiki external" target="_blank" href="https://www.elastic.co/blog/elasticsearch-7-2-0-released" rel="external">Elasticsearch 7.2.0 Released</a><span class="icon icon-link-external fas fa-external-link-alt "   ></span></td></tr><tr><td class="wikicell" >2019-05-07 </td><td class="wikicell" > <a class="wiki external" target="_blank" href="http://tikitrackers.org" rel="external">Tiki Trackers</a><span class="icon icon-link-external fas fa-external-link-alt "   ></span> were presented at the <a href="Presentation-des-Tiki-Trackers-au-Linux-Meetup-du-7-mai-2019" title="Présentation des Tiki Trackers au Linux-Meetup du 7 mai 2019" class="wiki wiki_page">Linux-Meetup in Montréal</a> (in French)</td></tr><tr><td class="wikicell" >2019-04-24 </td><td class="wikicell" > <a class="wiki external" target="_blank" href="https://www.clearos.com/clearfoundation/social/community/php-engines-update-including-php-7-2" rel="external">Added PHP 7.2 support</a><span class="icon icon-link-external fas fa-external-link-alt "   ></span></td></tr><tr><td class="wikicell" >2019-04-11 </td><td class="wikicell" > You are invited to help test <a target="_blank" class="wiki external"  href="http://WikiSuite.chat">http://WikiSuite.chat<span class="icon icon-link-external fas fa-external-link-alt "   ></span></a> </td></tr><tr><td class="wikicell" >2019-03-22 </td><td class="wikicell" > <a class="wiki external" target="_blank" href="https://github.com/syncthing/syncthing/releases/tag/v1.1.0" rel="external">Syncthing v1.1.0 Released</a><span class="icon icon-link-external fas fa-external-link-alt "   ></span></td></tr><tr><td class="wikicell" >2019-03-18 </td><td class="wikicell" > <a class="wiki external" target="_blank" href="https://blog.xibo.org.uk/2-0-0-released/" rel="external"> XIBO 2.0.0 Released</a><span class="icon icon-link-external fas fa-external-link-alt "   ></span></td></tr></table>
+<p><a href="All-updates#Other_Updates" title="All updates" class="wiki wiki_page">See all updates</a>
+</p>
+</div>
+</div></div>
+<p><style>.updates .table {
+    width:100% ;
+}</style>
+
+</p>
+
+<p>
+</p>
+<div class='row key-areas'><div class='container'>
+<h2 class="showhide_heading" id="What_WikiSuite_can_do_in_these_key_areas">  What WikiSuite can do in these key&nbsp;areas&nbsp;<a href="#What_WikiSuite_can_do_in_these_key_areas" class="heading-link"><span class="icon icon-link fas fa-link "   ></span></a></h2>
+<div class='col-md-6 col-lg-3'>
+<p>	<a href="https://wikisuite.org/Email-and-Calendar" class="internal"  target="_blank">		<img src="dl190?display"  width="446" height="430" alt="Icon Emailv3" class="regImage pluginImg190 img-fluid" />	</a>
+</p>
+<h3 class="showhide_heading" id="Email_and_Calendar">  Email and&nbsp;Calendar&nbsp;<a href="#Email_and_Calendar" class="heading-link"><span class="icon icon-link fas fa-link "   ></span></a></h3>
+<p>The Universal Communication Tool
+</p>
+
+<ul><li> Calendar
+</li><li> Newsletter
+</li><li> Webmail
+</li><li> Address Book
+</li><li> IMAP / CardDAV / CalDAV
+</li><li> Notifications of Changes
+</li><li> Anti-Spam
+</li><li> Filters
+</li></ul><p><a href="Email-and-Calendar" title="Email and Calendar" class="wiki wiki_page">More Info</a>
+</p>
+</div>
+<p>
+</p>
+<div class='col-md-6 col-lg-3'>
+<p>	<a href="https://wikisuite.org/OS-and-Network" class="internal"  target="_blank">		<img src="dl192?display"  width="447" height="436" alt="Icon Networkv3" class="regImage pluginImg192 img-fluid" />	</a>
+</p>
+<h3 class="showhide_heading" id="OS_and_Network">  OS and&nbsp;Network&nbsp;<a href="#OS_and_Network" class="heading-link"><span class="icon icon-link fas fa-link "   ></span></a></h3>
+<p>The Underlying Infrastructure
+</p>
+<ul><li> Router / Gateway / Firewall / VPN
+</li><li> Virtualization (Any Client OS)
+</li><li> Unified Index / Search
+</li><li> Server / Network
+</li><li> Desktop / Mobile
+</li><li> Natural Language Processing (NLP)
+</li><li> Federated Search
+</li></ul><p><a href="OS-and-Network" title="OS and Network" class="wiki wiki_page"> More Info</a>
+</p>
+</div>
+<p>
+</p>
+<div class='col-md-6 col-lg-3'>
+<p>	<a href="https://wikisuite.org/Commerce" class="internal"  target="_blank">		<img src="dl189?display"  width="452" height="430" alt="Icon Commercev3" class="regImage pluginImg189 img-fluid" />	</a>
+</p>
+<h3 class="showhide_heading" id="Commerce">  Commerce&nbsp;<a href="#Commerce" class="heading-link"><span class="icon icon-link fas fa-link "   ></span></a></h3>
+<p>Sell Memberships, Products or&nbsp;Services
+</p>
+
+<ul><li> Customer / Membership Management (CRM)
+</li><li> Shopping Cart / Payment
+</li><li> Sales Force Management
+</li><li> Advertising / Social Networks
+</li><li> Event Management
+</li><li> Digital Signage
+</li><li> Accounting (Alpha)
+</li></ul><p><a href="Commerce" title="Commerce" class="wiki wiki_page"> More Info</a>
+</p>
+</div>
+<p>
+</p>
+<div class='col-md-6 col-lg-3'>
+<p>	<a href="https://wikisuite.org/Web-and-Intranet" class="internal"  target="_blank">		<img src="dl191?display"  width="447" height="430" alt="Icon Intranetv3" class="regImage pluginImg191 img-fluid" />	</a>
+</p>
+<h3 class="showhide_heading" id="Web_and_Intranet">  Web and&nbsp;Intranet&nbsp;<a href="#Web_and_Intranet" class="heading-link"><span class="icon icon-link fas fa-link "   ></span></a></h3>
+<p>Your Public and Private Web Content
+</p>
+
+<ul><li> Website / CMS / Blog
+</li><li> Wiki / Knowledge Base / Book
+</li><li> Enterprise Social Networking
+</li><li> Customer Support / Issue Tracker
+</li><li> Web Framework / Workflows
+</li><li> E-Learning / Quizzes
+</li><li> Video Management
+</li><li> Forums
+</li></ul><p><a href="Web-and-Intranet" title="Web and Intranet" class="wiki wiki_page"> More Info</a>
+</p>
+</div>
+<p>
+</p>
+<div class='col-md-6 col-lg-3'>
+<p>	<a href="https://wikisuite.org/Chat-and-Video-Conference" class="internal"  target="_blank">		<img src="dl195?display"  width="435" height="436" alt="Icon Videov3" class="regImage pluginImg195 img-fluid" />	</a>
+</p>
+<h3 class="showhide_heading" id="Chat_and_Video_Conference">  Chat and Video&nbsp;Conference&nbsp;<a href="#Chat_and_Video_Conference" class="heading-link"><span class="icon icon-link fas fa-link "   ></span></a></h3>
+<p>Rich Realtime Unified Communications (XMPP + WebRTC + SIP)
+</p>
+
+<ul><li> PBX Phone System with Voicemail to Email
+</li><li> Realtime Collaborative of Text, Drawing and Scrum Board (Beta)
+</li><li> Presence / Chat (XMPP)
+</li><li> Co-Browsing (Beta)
+</li><li> Video Conference and Recording
+</li><li> Remote Control of Keyboard and Mouse (Alpha)
+</li><li> Screen Sharing
+</li><li> Slideshow
+</li></ul><p><a href="Chat-and-Video-Conference" title="Chat and Video Conference" class="wiki wiki_page">More Info</a>
+</p>
+</div>
+<p>
+</p>
+<div class='col-md-6 col-lg-3'>
+<p>	<a href="https://wikisuite.org/Security" class="internal"  target="_blank">		<img src="dl193?display"  width="446" height="430" alt="Icon Securityv3" class="regImage pluginImg193 img-fluid" />	</a>
+</p>
+<h3 class="showhide_heading" id="Security">  Security&nbsp;<a href="#Security" class="heading-link"><span class="icon icon-link fas fa-link "   ></span></a></h3>
+<p>Keep your Data Safe from Loss or&nbsp;Disclosure
+</p>
+
+<ul><li> LDAP User / Group Management
+</li><li> Intrusion Detection / Protection
+</li><li> Password Management
+</li><li> Anti-Virus / Anti-Spam
+</li><li> Firewall / VPN
+</li><li> Registration System
+</li><li> Anti-Phishing
+</li><li> File Encryption
+</li></ul><p><a href="Security" title="Security" class="wiki wiki_page">More Info</a>
+</p>
+</div>
+<p>
+</p>
+<div class='col-md-6 col-lg-3'>
+<p>	<a href="https://wikisuite.org/BPM-and-Analytics" class="internal"  target="_blank">		<img src="dl188?display"  width="435" height="430" alt="Icon Analyticsv3" class="regImage pluginImg188 img-fluid" />	</a>
+</p>
+<h3 class="showhide_heading" id="BPM_and_Analytics">  BPM and&nbsp;Analytics&nbsp;<a href="#BPM_and_Analytics" class="heading-link"><span class="icon icon-link fas fa-link "   ></span></a></h3>
+<p>Manage, Measure and Optimize your Business Processes
+</p>
+
+<ul><li> Database / Forms / Reports
+</li><li> Web Analytics
+</li><li> Reports / Stats
+</li><li> Surveys / Polls
+</li><li> Business Intelligence
+</li><li> Spreadsheet / Charts
+</li><li> Project Management
+</li><li> Alerts
+</li></ul><p><a href="BPM-and-Analytics" title="BPM and Analytics" class="wiki wiki_page">More Info</a>
+</p>
+</div>
+<p>
+</p>
+<div class='col-md-6 col-lg-3'>
+<p>	<a href="https://wikisuite.org/Files-and-Sync" class="internal"  target="_blank">		<img src="dl194?display"  width="447" height="430" alt="Icon Syncv3" class="regImage pluginImg194 img-fluid" />	</a>
+</p>
+<h3 class="showhide_heading" id="Files_and_Sync">  Files and&nbsp;Sync&nbsp;<a href="#Files_and_Sync" class="heading-link"><span class="icon icon-link fas fa-link "   ></span></a></h3>
+<p>Always Have the Latest Version and Access to Previous Ones
+</p>
+
+<ul><li> Backup
+</li><li> Versioning
+</li><li> Master Folders
+</li><li> Files of Any Size
+</li><li> Search within Files
+</li><li> Multi-Device File Sync
+</li><li> Offline Access
+</li></ul><p><a href="Files-and-Sync" title="Files and Sync" class="wiki wiki_page"> More Info</a>
+</p>
+</div>
+<p>
+</p>
+<div class='donate'>
+<div class='roadmap'>
+<h3 class="showhide_heading" id="Want_to_help_WikiSuite_Your_support_enables_the_development_of_even_more_features.">  Want to help WikiSuite? Your support enables the development of even more&nbsp;features.&nbsp;<a href="#Want_to_help_WikiSuite_Your_support_enables_the_development_of_even_more_features." class="heading-link"><span class="icon icon-link fas fa-link "   ></span></a></h3>
+<p>You can view the roadmap <a href="Roadmap" title="Roadmap" class="wiki wiki_page">here</a>.
+</p>
+</div>
+<p><a class="btn btn-primary " data-role="button" data-inline="true"  href="/Donate">Donate</a>
+</p>
+</div>
+</div></div>
+<div class='row'><div class='container'>
+<h2 style="text-align: center;" class="showhide_heading" id="WikiSuite_Blog">  WikiSuite Blog&nbsp;<a href="#WikiSuite_Blog" class="heading-link"><span class="icon icon-link fas fa-link "   ></span></a></h2>
+<div class='home-blog'>
+
+
+	
+	<article class="card blogpost postbody clearfix d-block mb-5 wikiplugin_bloglist">
+			<a id="postId13"></a>
+	
+<header class="clearfix card-header">
+	<div class="blog-postbody-title">
+					<bold><a href="blogpost13-Get-the-most-out-of-your-digital-signage-Manage-it-with-XIBO" class="link" data-type="blog post" data-object="13">Get the most out of your digital signage - Manage it with XIBO</a></bold>
+				
+<div class="author_info">
+					<span style="font-size: 80%"><span class="icon icon-clock-o far fa-clock tips"  title=":Publish Date" ></span></span> Wednesday March 27, 2019
+	</div>
+	</div>
+				</header>
+	
+	<div class="postbody-content card-body">
+		<p><img src="dl841?display"  width="1103" height="394" alt="Xibo Blog" class="regImage pluginImg841 img-fluid" />
+</p>
+
+<p>Digital signage is a form of electronic display that shows information, advertising and other messages. Digital signs (such as LCD, LED, and plasma displays, and projected images) can be found in public and private environments such as retail sto 
+	</div>
+
+						<footer class="postfooter card-footer clearfix">
+				
+														
+											<div class="form-text">
+																		
+						</div>
+													
+							</footer>
+				</article>
+	<article class="card blogpost postbody clearfix d-block mb-5 wikiplugin_bloglist">
+			<a id="postId12"></a>
+	
+<header class="clearfix card-header">
+	<div class="blog-postbody-title">
+					<bold><a href="blogpost12-Affirmation-of-the-Open-Source-Definition" class="link" data-type="blog post" data-object="12">Affirmation of the Open Source Definition</a></bold>
+				
+<div class="author_info">
+					<span style="font-size: 80%"><span class="icon icon-clock-o far fa-clock tips"  title=":Publish Date" ></span></span> Tuesday February 5, 2019
+	</div>
+	</div>
+				</header>
+	
+	<div class="postbody-content card-body">
+		<p><img src="dl821?display"  width="1103" height="394" alt="Osi Blog" class="regImage pluginImg821 img-fluid" />
+</p>
+
+<p>In 1799 the kilogram was defined as the mass of a litre of water. In 1889, metal cylinders of the precise identical mass were created as reference objects.
+</p>
+
+<p>In the hundreds of years since, the physical nature of the metal caused those cylinder 
+	</div>
+
+						<footer class="postfooter card-footer clearfix">
+				
+														
+											<div class="form-text">
+																		
+						</div>
+													
+							</footer>
+				</article>
+	<article class="card blogpost postbody clearfix d-block mb-5 wikiplugin_bloglist">
+			<a id="postId11"></a>
+	
+<header class="clearfix card-header">
+	<div class="blog-postbody-title">
+					<bold><a href="blogpost11-Tiki-19-Keeping-you-ahead" class="link" data-type="blog post" data-object="11">Tiki 19 - Keeping you ahead</a></bold>
+				
+<div class="author_info">
+					<span style="font-size: 80%"><span class="icon icon-clock-o far fa-clock tips"  title=":Publish Date" ></span></span> Friday December 21, 2018
+	</div>
+	</div>
+				</header>
+	
+	<div class="postbody-content card-body">
+		<p><img src="dl816?display"  width="1103" height="394" alt="Blog Images1" class="regImage pluginImg816 img-fluid" />
+</p>
+
+<p><a class="wiki external" target="_blank" href="https://tiki.org/Download" rel="external">Tiki 19</a><span class="icon icon-link-external fas fa-external-link-alt "   ></span> was recently released by the Tiki Community (<a class="wiki external" target="_blank" href="https://tiki.org" rel="external">Tiki.org</a><span class="icon icon-link-external fas fa-external-link-alt "   ></span>). A number of significant feature upgrades insure that Tiki remains future-proof and stays current with rapidly advancing technology. Key discussions were held among Tiki devel 
+	</div>
+
+						<footer class="postfooter card-footer clearfix">
+				
+														
+											<div class="form-text">
+																		
+						</div>
+													
+							</footer>
+				</article>
+
+
+</div>
+</div></div>
+<p>
+<br /><style>.home-blog article {display: table-cell !important;} .home-blog .card {border:0px !important;}</style>
+</p>
+
+					</div>
+
+		
+			</article> 
+
+	
+	<footer class="form-text">
+		
+		
+		
+			</footer>
+
+		
+							
+		
+	
+	
+	
+			
+														
+					</div>
+				</div>
+							</div>
+		</div>
+	</div>
+
+				<footer class="footer main-footer" id="footer">
+			<div class="footer_liner">
+				<div class="container container-std">
+					<div class="content clearfix modules bottom_modules p-3 mx--15px" id="bottom_modules">
+		
+
+
+
+						<div id="module_24" style=""
+						 class="module box-menupage">
+						<div id="mod-menupagebottom2">
+																	<div class='row powered-by'>
+<div class='container'>
+<div style="text-align: center;">WikiSuite™ is powered by: </div>
+<ul><li> <a href="ClearOS" title="ClearOS" class="wiki wiki_page">ClearOS</a>	<a href="ClearOS" class="internal"  target='_blank' >		<img src="dl422?display"  width="231" height="103" alt="Clearos" class="regImage pluginImg422 img-fluid" />	</a>
+</li><li> <a href="Openfire-Meetings" title="Openfire Meetings" class="wiki wiki_page">Openfire Meetings</a> / <a href="Jitsi-Meet" title="Jitsi Meet" class="wiki wiki_page">Jitsi Meet</a>	<a href="Openfire-Meetings" class="internal"  target='_blank' >		<img src="dl436?display"  width="231" height="103" alt="Openfire Meetings and Jitsi Meet" class="regImage pluginImg436 img-fluid" />	</a>
+</li><li> <a href="Cyrus-IMAP" title="Cyrus IMAP" class="wiki wiki_page">Cyrus IMAP</a>	<a href="Cyrus-IMAP" class="internal"  target='_blank' >		<img src="dl910?display"  width="231" height="103" alt="Cyrus Imap" class="regImage pluginImg910 img-fluid" />	</a>
+</li><li> <a href="Tiki-Wiki-CMS-Groupware" title="Tiki Wiki CMS Groupware" class="wiki wiki_page">Tiki Wiki CMS Groupware</a>	<a href="Tiki-Wiki-CMS-Groupware" class="internal"  target='_blank' >		<img src="dl434?display"  width="231" height="103" alt="Tiki" class="regImage pluginImg434 img-fluid" />	</a>
+</li><li> <a href="Syncthing" title="Syncthing" class="wiki wiki_page">Syncthing</a>	<a href="Syncthing" class="internal"  target='_blank' >		<img src="dl433?display"  width="231" height="103" alt="Syncthing" class="regImage pluginImg433 img-fluid" />	</a>
+</li><li> <a href="Elasticsearch" title="Elasticsearch" class="wiki wiki_page">Elasticsearch</a> 	<a href="Elasticsearch" class="internal"  target='_blank' >		<img src="dl424?display"  width="231" height="103" alt="Elasticsearch" class="regImage pluginImg424 img-fluid" />	</a>
+</li><li> <a href="Kimchi" title="Kimchi" class="wiki wiki_page">Kimchi</a> / <a href="KVM" title="KVM" class="wiki wiki_page">KVM</a>	<a href="Kimchi" class="internal"  target='_blank' >		<img src="dl438?display"  width="231" height="103" alt="Kimchi and KVM" class="regImage pluginImg438 img-fluid" />	</a>
+</li><li> <a href="FusionPBX" title="FusionPBX" class="wiki wiki_page">FusionPBX</a> / <a href="FreeSWITCH" title="FreeSWITCH" class="wiki wiki_page">FreeSWITCH</a>	<a href="FusionPBX" class="internal"  target='_blank' >		<img src="dl437?display"  width="231" height="103" alt="FusionPBX and FreeSWITCH" class="regImage pluginImg437 img-fluid" />	</a>
+</li><li> <a href="Xibo" title="Xibo" class="wiki wiki_page">XIBO</a>	<a href="Xibo" class="internal"  target='_blank' >		<img src="dl435?display"  width="231" height="103" alt="Xibo" class="regImage pluginImg435 img-fluid" />	</a>
+</li></ul></div></div>
+		
+																			
+							</div>
+	</div>
+
+	
+
+
+
+						<div id="module_12" style=""
+						 class="module box-menupage">
+						<div id="mod-menupagebottom3">
+																	<div class='follow-us large'>
+<div style="text-align: center;">Follow us: </div>
+
+<div class="social-links">
+<p><a href="https://www.facebook.com/WikiSuite" class="fab fa-facebook-f" target="_blank"></a>
+<a href="https://twitter.com/WikiSuite" class="fab fa-twitter" target="_blank"></a>
+<a href="https://www.linkedin.com/groups/8493103" class="fab fa-linkedin-in" target="_blank"></a>
+<a href="https://www.youtube.com/channel/UCbiP9xUG-ffomKI2ewzEp8Q" class="fab fa-youtube" target="_blank"></a>
+</p>
+</div>
+<p><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Fwikisuite%2F&width=149&layout=button_count&action=like&size=large&show_faces=false&share=true&height=46&appId=428463844241842" width="149" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+</p>
+
+<p><span><a href="https://github.com/WikiSuite" target="_blank"  style="display:inline;"><img src="display657" title="WikiSuite at github" alt="WikiSuite at github"></a>
+<a href="https://www.openhub.net/p/wikisuite" target="_blank" style="display:inline;"  ><img src="display656" title="WikiSuite at openhub" alt="WikiSuite at openhub"></a>
+</span>
+</p>
+
+<p class="copyright small">&copy; 2016-2019 WikiSuite™</p>
+
+</div>
+		
+																			
+							</div>
+	</div>
+
+
+
+
+
+
+						<div id="module_25" style=""
+						 class="module box-svnup">
+						<div id="mod-svnupbottom5">
+														<div class="cvsup">Last update from SVN (20.2svn): Tuesday November 5, 2019 18:26:39 PST- REV 71419</div>
+																			
+							</div>
+	</div>
+
+
+
+
+
+
+						<div id="module_26" style=""
+						 class="module box-loadstats">
+						<div id="mod-loadstatsbottom6">
+														<small>[ Execution time: 0.62 secs ] &nbsp; [ Memory usage: 25.02MB ] &nbsp; [ Queries: 255 in 0.10 secs ]</small>
+																			
+							</div>
+	</div>
+
+
+</div>
+				</div>
+			</div>
+		</footer>
+		
+	
+
+
+<div id="bootstrap-modal" class="modal fade footer-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			
+			<div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel"></h4>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="bootstrap-modal-2" class="modal fade footer-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+		</div>
+	</div>
+</div>
+<div id="bootstrap-modal-3" class="modal fade footer-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+		</div>
+	</div>
+</div>
+	
+	
+
+
+
+<!-- Put JS at the end -->
+	
+	
+<script type="text/javascript" src="temp/public/min_main_a34d2b67bc22fe2c72513d2043cadb9f.js"></script>
+<script type="text/javascript" src="temp/public/min_main_29fd096d0de0776770402bb2a5e62396.js"></script>
+	
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+// js 0 
+tiki_cookie_jar=new Object();
+$.lang = 'en';
+
+// JS Object to hold prefs for jq
+var jqueryTiki = {"ui":true,"ui_theme":"flick","tooltips":true,"autocomplete":true,"superfish":true,"reflection":false,"tablesorter":true,"colorbox":true,"cboxCurrent":"{current} / {total}","sheet":false,"carousel":true,"validate":true,"zoom":false,"effect":"","effect_direction":"vertical","effect_speed":"400","effect_tabs":"slide","effect_tabs_direction":"vertical","effect_tabs_speed":"fast","home_file_gallery":1,"autosave":true,"sefurl":true,"ajax":true,"syntaxHighlighter":true,"chosen":true,"chosen_sortable":false,"mapTileSets":["openstreetmap"],"infoboxTypes":["trackeritem","activity"],"googleStreetView":false,"googleStreetViewOverlay":false,"googleMapsAPIKey":"","structurePageRepeat":false,"mobile":false,"no_cookie":false,"language":"en","useInlineComment":false,"useInlineAnnotations":false,"helpurl":"http://doc.tiki.org/","shortDateFormat":"yy-mm-dd","shortTimeFormat":"HH:mm","username":null,"userRealName":null,"userAvatar":"http://wikisuite.org/img/noavatar.png?v=1564697863","autoToc_inline":false,"autoToc_pos":"right","autoToc_offset":"10","bingMapsAPIKey":"","nextzenAPIKey":"","securityTimeout":"1440","current_object":{"type":"wiki page","object":"Software"}}
+
+jqueryTiki.iconset = {"defaults":["500px","accessible-icon","accusoft","ad","address-book","address-card","adjust","adn","adversal","affiliatetheme","air-freshener","algolia","align-center","align-justify","align-left","align-right","alipay","allergies","amazon","amazon-pay","ambulance","american-sign-language-interpreting","amilia","anchor","android","angellist","angle-double-down","angle-double-left","angle-double-right","angle-double-up","angle-down","angle-left","angle-right","angle-up","angry","angrycreative","angular","ankh","app-store","app-store-ios","apper","apple","apple-alt","apple-pay","archive","archway","arrow-alt-circle-down","arrow-alt-circle-left","arrow-alt-circle-right","arrow-alt-circle-up","arrow-circle-down","arrow-circle-left","arrow-circle-right","arrow-circle-up","arrow-down","arrow-left","arrow-right","arrow-up","arrows-alt","arrows-alt-h","arrows-alt-v","assistive-listening-systems","asterisk","asymmetrik","at","atlas","atom","audible","audio-description","autoprefixer","avianex","aviato","award","aws","backspace","backward","balance-scale","ban","band-aid","bandcamp","barcode","bars","baseball-ball","basketball-ball","bath","battery-empty","battery-full","battery-half","battery-quarter","battery-three-quarters","bed","beer","behance","behance-square","bell","bell-slash","bezier-curve","bible","bicycle","bimobject","binoculars","birthday-cake","bitbucket","bitcoin","bity","black-tie","blackberry","blender","blind","blogger","blogger-b","bluetooth","bluetooth-b","bold","bolt","bomb","bone","bong","book","book-open","book-reader","bookmark","bowling-ball","box","box-open","boxes","braille","brain","briefcase","briefcase-medical","broadcast-tower","broom","brush","btc","bug","building","bullhorn","bullseye","burn","buromobelexperte","bus","bus-alt","business-time","buysellads","calculator","calendar","calendar-alt","calendar-check","calendar-minus","calendar-plus","calendar-times","camera","camera-retro","cannabis","capsules","car","car-alt","car-battery","car-crash","car-side","caret-down","caret-left","caret-right","caret-square-down","caret-square-left","caret-square-right","caret-square-up","caret-up","cart-arrow-down","cart-plus","cc-amazon-pay","cc-amex","cc-apple-pay","cc-diners-club","cc-discover","cc-jcb","cc-mastercard","cc-paypal","cc-stripe","cc-visa","centercode","certificate","chalkboard","chalkboard-teacher","charging-station","chart-area","chart-bar","chart-line","chart-pie","check","check-circle","check-double","check-square","chess","chess-bishop","chess-board","chess-king","chess-knight","chess-pawn","chess-queen","chess-rook","chevron-circle-down","chevron-circle-left","chevron-circle-right","chevron-circle-up","chevron-down","chevron-left","chevron-right","chevron-up","child","chrome","church","circle","circle-notch","city","clipboard","clipboard-check","clipboard-list","clock","clone","closed-captioning","cloud","cloud-download-alt","cloud-upload-alt","cloudscale","cloudsmith","cloudversify","cocktail","code","code-branch","codepen","codiepie","coffee","cog","cogs","coins","columns","comment","comment-alt","comment-dollar","comment-dots","comment-slash","comments","comments-dollar","compact-disc","compass","compress","concierge-bell","connectdevelop","contao","cookie","cookie-bite","copy","copyright","couch","cpanel","creative-commons","creative-commons-by","creative-commons-nc","creative-commons-nc-eu","creative-commons-nc-jp","creative-commons-nd","creative-commons-pd","creative-commons-pd-alt","creative-commons-remix","creative-commons-sa","creative-commons-sampling","creative-commons-sampling-plus","creative-commons-share","credit-card","crop","crop-alt","cross","crosshairs","crow","crown","css3","css3-alt","cube","cubes","cut","cuttlefish","d-and-d","dashcube","database","deaf","delicious","deploydog","deskpro","desktop","deviantart","dharmachakra","diagnoses","dice","dice-five","dice-four","dice-one","dice-six","dice-three","dice-two","digg","digital-ocean","digital-tachograph","directions","discord","discourse","divide","dizzy","dna","dochub","docker","dollar-sign","dolly","dolly-flatbed","donate","door-closed","door-open","dot-circle","dove","download","draft2digital","drafting-compass","draw-polygon","dribbble","dribbble-square","dropbox","drum","drum-steelpan","drupal","dumbbell","dyalog","earlybirds","ebay","edge","edit","eject","elementor","ellipsis-h","ellipsis-v","ello","ember","empire","envelope","envelope-open","envelope-open-text","envelope-square","envira","equals","eraser","erlang","ethereum","etsy","euro-sign","exchange-alt","exclamation","exclamation-circle","exclamation-triangle","expand","expand-arrows-alt","expeditedssl","external-link-alt","external-link-square-alt","eye","eye-dropper","eye-slash","facebook","facebook-f","facebook-messenger","facebook-square","fast-backward","fast-forward","fax","feather","feather-alt","female","fighter-jet","file","file-alt","file-archive","file-audio","file-code","file-contract","file-download","file-excel","file-export","file-image","file-import","file-invoice","file-invoice-dollar","file-medical","file-medical-alt","file-pdf","file-powerpoint","file-prescription","file-signature","file-upload","file-video","file-word","fill","fill-drip","film","filter","fingerprint","fire","fire-extinguisher","firefox","first-aid","first-order","first-order-alt","firstdraft","fish","flag","flag-checkered","flask","flickr","flipboard","flushed","fly","folder","folder-minus","folder-open","folder-plus","font","font-awesome","font-awesome-alt","font-awesome-flag","fonticons","fonticons-fi","football-ball","fort-awesome","fort-awesome-alt","forumbee","forward","foursquare","free-code-camp","freebsd","frog","frown","frown-open","fulcrum","funnel-dollar","futbol","galactic-republic","galactic-senate","gamepad","gas-pump","gavel","gem","genderless","get-pocket","gg","gg-circle","ghost","gift","gifts","git","git-square","github","github-alt","github-square","gitkraken","gitlab","gitter","glass-cheers","glass-martini","glass-martini-alt","glass-whiskey","glasses","glide","glide-g","globe","globe-africa","globe-americas","globe-asia","globe-europe","gofore","golf-ball","goodreads","goodreads-g","google","google-drive","google-play","google-plus","google-plus-g","google-plus-square","google-wallet","gopuram","graduation-cap","gratipay","grav","greater-than","greater-than-equal","grimace","grin","grin-alt","grin-beam","grin-beam-sweat","grin-hearts","grin-squint","grin-squint-tears","grin-stars","grin-tears","grin-tongue","grin-tongue-squint","grin-tongue-wink","grin-wink","grip-horizontal","grip-lines","grip-lines-vertical","grip-vertical","gripfire","grunt","guitar","gulp","h-square","hacker-news","hacker-news-square","hackerrank","hammer","hamsa","hand-holding","hand-holding-heart","hand-holding-usd","hand-lizard","hand-paper","hand-peace","hand-point-down","hand-point-left","hand-point-right","hand-point-up","hand-pointer","hand-rock","hand-scissors","hand-spock","hands","hands-helping","handshake","hanukiah","hashtag","hat-wizard","haykal","hdd","heading","headphones","headphones-alt","headset","heart","heart-broken","heartbeat","helicopter","highlighter","hiking","hippo","hips","hire-a-helper","history","hockey-puck","holly-berry","home","hooli","hornbill","horse","horse-head","hospital","hospital-alt","hospital-symbol","hot-tub","hotel","hotjar","hourglass","hourglass-end","hourglass-half","hourglass-start","house-damage","houzz","hryvnia","html5","hubspot","i-cursor","id-badge","id-card","id-card-alt","image","images","imdb","inbox","indent","industry","infinity","info","info-circle","instagram","internet-explorer","ioxhost","italic","itunes","itunes-note","java","jedi","jedi-order","jenkins","joget","joint","joomla","journal-whills","js","js-square","jsfiddle","kaaba","kaggle","key","keybase","keyboard","keycdn","khanda","kickstarter","kickstarter-k","kiss","kiss-beam","kiss-wink-heart","kiwi-bird","korvue","landmark","language","laptop","laptop-code","laravel","lastfm","lastfm-square","laugh","laugh-beam","laugh-squint","laugh-wink","layer-group","leaf","leanpub","lemon","less","less-than","less-than-equal","level-down-alt","level-up-alt","life-ring","lightbulb","line","link","linkedin","linkedin-in","linode","linux","lira-sign","list","list-alt","list-ol","list-ul","location-arrow","lock","lock-open","long-arrow-alt-down","long-arrow-alt-left","long-arrow-alt-right","long-arrow-alt-up","low-vision","luggage-cart","lyft","magento","magic","magnet","mail-bulk","mailchimp","male","mandalorian","map","map-marked","map-marked-alt","map-marker","map-marker-alt","map-pin","map-signs","markdown","marker","mars","mars-double","mars-stroke","mars-stroke-h","mars-stroke-v","mastodon","maxcdn","medal","medapps","medium","medium-m","medkit","medrt","meetup","megaport","meh","meh-blank","meh-rolling-eyes","memory","menorah","mercury","microchip","microphone","microphone-alt","microphone-alt-slash","microphone-slash","microscope","microsoft","minus","minus-circle","minus-square","mix","mixcloud","mizuni","mobile","mobile-alt","modx","monero","money-bill","money-bill-alt","money-bill-wave","money-bill-wave-alt","money-check","money-check-alt","monument","moon","mortar-pestle","mosque","motorcycle","mouse-pointer","music","napster","neos","neuter","newspaper","nimblr","nintendo-switch","node","node-js","not-equal","notes-medical","npm","ns8","nutritionix","object-group","object-ungroup","odnoklassniki","odnoklassniki-square","oil-can","old-republic","om","opencart","openid","opera","optin-monster","osi","outdent","page4","pagelines","paint-brush","paint-roller","palette","palfed","pallet","paper-plane","paperclip","parachute-box","paragraph","parking","passport","pastafarianism","paste","patreon","pause","pause-circle","paw","paypal","peace","pen","pen-alt","pen-fancy","pen-nib","pen-square","pencil-alt","pencil-ruler","people-carry","percent","percentage","periscope","phabricator","phoenix-framework","phoenix-squadron","phone","phone-slash","phone-square","phone-volume","php","pied-piper","pied-piper-alt","pied-piper-hat","pied-piper-pp","piggy-bank","pills","pinterest","pinterest-p","pinterest-square","place-of-worship","plane","plane-arrival","plane-departure","play","play-circle","playstation","plug","plus","plus-circle","plus-square","podcast","poll","poll-h","poo","poop","portrait","pound-sign","power-off","pray","praying-hands","prescription","prescription-bottle","prescription-bottle-alt","print","procedures","product-hunt","project-diagram","pushed","puzzle-piece","python","qq","qrcode","question","question-circle","quidditch","quinscape","quora","quote-left","quote-right","quran","r-project","radiation","radiation-alt","rainbow","random","raspberry-pi","ravelry","react","reacteurope","readme","rebel","receipt","recycle","red-river","reddit","reddit-alien","reddit-square","redhat","redo","redo-alt","registered","renren","reply","reply-all","replyd","republican","researchgate","resolving","restroom","retweet","rev","ribbon","ring","road","robot","rocket","rocketchat","rockrms","route","rss","rss-square","ruble-sign","ruler","ruler-combined","ruler-horizontal","ruler-vertical","running","rupee-sign","sad-cry","sad-tear","safari","sass","save","schlix","school","screwdriver","scribd","search","search-dollar","search-location","search-minus","search-plus","searchengin","seedling","sellcast","sellsy","server","servicestack","shapes","share","share-alt","share-alt-square","share-square","shekel-sign","shield-alt","ship","shipping-fast","shirtsinbulk","shoe-prints","shopping-bag","shopping-basket","shopping-cart","shopware","shower","shuttle-van","sign","sign-in-alt","sign-language","sign-out-alt","signal","signature","simplybuilt","sistrix","sitemap","sith","skull","skyatlas","skype","slack","slack-hash","sliders-h","slideshare","smile","smile-beam","smile-wink","smoking","smoking-ban","snapchat","snapchat-ghost","snapchat-square","snowflake","socks","solar-panel","sort","sort-alpha-down","sort-alpha-up","sort-amount-down","sort-amount-up","sort-down","sort-numeric-down","sort-numeric-up","sort-up","soundcloud","spa","space-shuttle","speakap","spinner","splotch","spotify","spray-can","square","square-full","square-root-alt","squarespace","stack-exchange","stack-overflow","stamp","star","star-and-crescent","star-half","star-half-alt","star-of-david","star-of-life","staylinked","steam","steam-square","steam-symbol","step-backward","step-forward","stethoscope","sticker-mule","sticky-note","stop","stop-circle","stopwatch","store","store-alt","strava","stream","street-view","strikethrough","stripe","stripe-s","stroopwafel","studiovinari","stumbleupon","stumbleupon-circle","subscript","subway","suitcase","suitcase-rolling","sun","superpowers","superscript","supple","surprise","swatchbook","swimmer","swimming-pool","synagogue","sync","sync-alt","syringe","table","table-tennis","tablet","tablet-alt","tablets","tachometer-alt","tag","tags","tape","tasks","taxi","teamspeak","teeth","teeth-open","telegram","telegram-plane","tencent-weibo","terminal","text-height","text-width","th","th-large","th-list","the-red-yeti","theater-masks","themeco","themeisle","thermometer","thermometer-empty","thermometer-full","thermometer-half","thermometer-quarter","thermometer-three-quarters","thumbs-down","thumbs-up","thumbtack","ticket-alt","times","times-circle","tint","tint-slash","tired","toggle-off","toggle-on","toolbox","tooth","torah","torii-gate","trade-federation","trademark","traffic-light","train","transgender","transgender-alt","trash","trash-alt","tree","trello","tripadvisor","trophy","truck","truck-loading","truck-monster","truck-moving","truck-pickup","tshirt","tty","tumblr","tumblr-square","tv","twitch","twitter","twitter-square","typo3","uber","uikit","umbrella","umbrella-beach","underline","undo","undo-alt","uniregistry","universal-access","university","unlink","unlock","unlock-alt","untappd","upload","usb","user","user-alt","user-alt-slash","user-astronaut","user-check","user-circle","user-clock","user-cog","user-edit","user-friends","user-graduate","user-lock","user-md","user-minus","user-ninja","user-plus","user-secret","user-shield","user-slash","user-tag","user-tie","user-times","users","users-cog","ussunnah","utensil-spoon","utensils","vaadin","vector-square","venus","venus-double","venus-mars","viacoin","viadeo","viadeo-square","vial","vials","viber","video","video-slash","vihara","vimeo","vimeo-square","vimeo-v","vine","vk","vnv","volleyball-ball","volume-down","volume-mute","volume-off","volume-up","vote-yea","vr-cardboard","vuejs","walking","wallet","warehouse","water","weebly","weibo","weight","weight-hanging","weixin","whatsapp","whatsapp-square","wheelchair","whmcs","wifi","wikipedia-w","wind","window-close","window-maximize","window-minimize","window-restore","windows","wine-bottle","wine-glass","wine-glass-alt","wix","wizards-of-the-coast","wolf-pack-battalion","won-sign","wordpress","wordpress-simple","wpbeginner","wpexplorer","wpforms","wpressr","wrench","x-ray","xbox","xing","xing-square","y-combinator","yahoo","yandex","yandex-international","yelp","yen-sign","yin-yang","yoast","youtube","youtube-square","zhihu"],"icons":{"actions":{"id":"play-circle"},"admin":{"id":"cog"},"add":{"id":"plus-circle"},"admin_ads":{"id":"film"},"admin_articles":{"id":"newspaper","prepend":"far fa-"},"admin_blogs":{"id":"bold"},"admin_calendar":{"id":"calendar-alt","prepend":"far fa-"},"admin_category":{"id":"sitemap fa-rotate-270"},"admin_comments":{"id":"comment"},"admin_community":{"id":"users"},"admin_connect":{"id":"link"},"admin_copyright":{"id":"copyright","prepend":"far fa-"},"admin_directory":{"id":"folder","prepend":"far fa-"},"admin_faqs":{"id":"question"},"admin_features":{"id":"power-off"},"admin_fgal":{"id":"folder-open"},"admin_forums":{"id":"comments"},"admin_freetags":{"id":"tags"},"admin_gal":{"id":"file-image","prepend":"far fa-"},"admin_general":{"id":"cog"},"admin_i18n":{"id":"language"},"admin_intertiki":{"id":"exchange-alt"},"admin_login":{"id":"sign-in-alt"},"admin_user":{"id":"user"},"admin_look":{"id":"image","prepend":"far fa-"},"admin_maps":{"id":"map-marker-alt"},"admin_messages":{"id":"envelope","prepend":"far fa-"},"admin_metatags":{"id":"tag"},"admin_module":{"id":"shapes"},"admin_payment":{"id":"credit-card","prepend":"far fa-"},"admin_performance":{"id":"tachometer-alt"},"admin_polls":{"id":"tasks"},"admin_profiles":{"id":"cube"},"admin_rating":{"id":"check-square"},"admin_rss":{"id":"rss"},"admin_score":{"id":"trophy"},"admin_search":{"id":"search"},"admin_semantic":{"id":"arrows-alt-h"},"admin_security":{"id":"lock"},"admin_sefurl":{"id":"search-plus"},"admin_share":{"id":"share-alt"},"admin_socialnetworks":{"id":"thumbs-up"},"admin_stats":{"id":"chart-bar","prepend":"far fa-"},"admin_textarea":{"id":"edit"},"admin_trackers":{"id":"database"},"admin_userfiles":{"id":"cog"},"admin_video":{"id":"video"},"admin_webmail":{"id":"inbox"},"admin_webservices":{"id":"cog"},"admin_wiki":{"id":"file-alt","prepend":"far fa-"},"admin_workspace":{"id":"desktop"},"admin_wysiwyg":{"id":"file-alt"},"admin_print":{"id":"print"},"admin_packages":{"id":"gift"},"admin_rtc":{"id":"bullhorn"},"adn":{"id":"adn","prepend":"fab fa-"},"amazon":{"id":"amazon","prepend":"fab fa-"},"android":{"id":"android","prepend":"fab fa-"},"angellist":{"id":"angellist","prepend":"fab fa-"},"apple":{"id":"apple","prepend":"fab fa-"},"area-chart":{"id":"chart-area"},"arrows":{"id":"arrows-alt"},"arrows-h":{"id":"arrows-alt-h"},"arrows-v":{"id":"arrows-alt-v"},"articles":{"id":"newspaper","prepend":"far fa-"},"attach":{"id":"paperclip"},"audio":{"id":"file-audio","prepend":"far fa-"},"back":{"id":"arrow-left"},"background-color":{"id":"paint-brush"},"backlink":{"id":"reply"},"backward_step":{"id":"step-backward"},"bar-chart":{"id":"chart-bar"},"behance":{"id":"behance","prepend":"fab fa-"},"behance-square":{"id":"behance-square","prepend":"fab fa-"},"bitbucket":{"id":"bitbucket","prepend":"fab fa-"},"black-tie":{"id":"black-tie","prepend":"fab fa-"},"bluetooth":{"id":"bluetooth","prepend":"fab fa-"},"bluetooth-b":{"id":"bluetooth-b","prepend":"fab fa-"},"box":{"id":"list-alt","prepend":"far fa-"},"btc":{"id":"btc","prepend":"fab fa-"},"buysellads":{"id":"buysellads","prepend":"fab fa-"},"cart":{"id":"shopping-cart"},"chart":{"id":"chart-area"},"cc-amex":{"id":"cc-amex","prepend":"fab fa-"},"cc-diners-club":{"id":"cc-diners-club","prepend":"fab fa-"},"cc-discover":{"id":"cc-discover","prepend":"fab fa-"},"cc-jcb":{"id":"cc-jcb","prepend":"fab fa-"},"cc-mastercard":{"id":"cc-mastercard","prepend":"fab fa-"},"cc-paypal":{"id":"cc-paypal","prepend":"fab fa-"},"cc-stripe":{"id":"cc-stripe","prepend":"fab fa-"},"cc-visa":{"id":"cc-visa","prepend":"fab fa-"},"chrome":{"id":"chrome","prepend":"fab fa-"},"close":{"id":"times"},"cloud-download":{"id":"cloud-download-alt"},"cloud-upload":{"id":"cloud-upload-alt"},"code_file":{"id":"file-code","prepend":"far fa-"},"code-fork":{"id":"code-branch"},"codepen":{"id":"codepen","prepend":"fab fa-"},"codiepie":{"id":"codiepie","prepend":"fab fa-"},"collapsed":{"id":"plus-square","prepend":"far fa-"},"comments":{"id":"comments","prepend":"far fa-"},"compose":{"id":"pencil-alt"},"computer":{"id":"desktop"},"contacts":{"id":"users"},"content-template":{"id":"file","prepend":"far fa-"},"create":{"id":"plus"},"creative-commons":{"id":"creative-commons","prepend":"fab fa-"},"css3":{"id":"css3","prepend":"fab fa-"},"dashboard":{"id":"tachometer-alt"},"dashcube":{"id":"dashcube","prepend":"fab fa-"},"delete":{"id":"times"},"delicious":{"id":"delicious","prepend":"fab fa-"},"deviantart":{"id":"deviantart","prepend":"fab fa-"},"difference":{"id":"strikethrough"},"disable":{"id":"minus-square"},"documentation":{"id":"book"},"down":{"id":"sort-down"},"dribbble":{"id":"dribbble","prepend":"fab fa-"},"dropbox":{"id":"dropbox","prepend":"fab fa-"},"drupal":{"id":"drupal","prepend":"fab fa-"},"edge":{"id":"edge","prepend":"fab fa-"},"education":{"id":"graduation-cap"},"empire":{"id":"empire","prepend":"fab fa-"},"envelope":{"id":"envelope","prepend":"far fa-"},"envira":{"id":"envira","prepend":"fab fa-"},"erase":{"id":"eraser"},"error":{"id":"exclamation-circle"},"excel":{"id":"file-excel","prepend":"far fa-"},"exchange":{"id":"exchange-alt"},"expanded":{"id":"minus-square","prepend":"far fa-"},"expeditedssl":{"id":"expeditedssl","prepend":"fab fa-"},"export":{"id":"download"},"facebook":{"id":"facebook","prepend":"fab fa-"},"facebook-f":{"id":"facebook-f","prepend":"fab fa-"},"file":{"id":"file","prepend":"far fa-"},"file-archive":{"id":"folder"},"file-archive-open":{"id":"folder-open"},"file-text":{"id":"file-alt"},"file-text-o":{"id":"file-alt","prepend":"far fa-"},"firefox":{"id":"firefox","prepend":"fab fa-"},"first-order":{"id":"first-order","prepend":"fab fa-"},"flickr":{"id":"flickr","prepend":"fab fa-"},"floppy":{"id":"save","prepend":"far fa-"},"font-awesome":{"id":"font-awesome","prepend":"fab fa-"},"font-color":{"id":"font","class":"text-danger"},"fonticons":{"id":"fonticons","prepend":"fab fa-"},"fort-awesome":{"id":"fort-awesome","prepend":"fab fa-"},"forumbee":{"id":"forumbee","prepend":"fab fa-"},"forward_step":{"id":"step-forward"},"foursquare":{"id":"foursquare","prepend":"fab fa-"},"fullscreen":{"id":"expand-arrows-alt"},"get-pocket":{"id":"get-pocket","prepend":"fab fa-"},"gg":{"id":"gg","prepend":"fab fa-"},"gg-circle":{"id":"gg-circle","prepend":"fab fa-"},"git":{"id":"git","prepend":"fab fa-"},"git-square":{"id":"git-square","prepend":"fab fa-"},"github":{"id":"github","prepend":"fab fa-"},"github-alt":{"id":"github-alt","prepend":"fab fa-"},"github-square":{"id":"github-square","prepend":"fab fa-"},"gitlab":{"id":"gitlab","prepend":"fab fa-"},"glide":{"id":"glide","prepend":"fab fa-"},"glide-g":{"id":"glide-g","prepend":"fab fa-"},"google":{"id":"google","prepend":"fab fa-"},"google-plus":{"id":"google-plus","prepend":"fab fa-"},"google-plus-g":{"id":"google-plus-g","prepend":"fab fa-"},"google-plus-square":{"id":"google-plus-square","prepend":"fab fa-"},"group":{"id":"users"},"h1":{"id":"heading"},"h2":{"id":"heading","size":".9"},"h3":{"id":"heading","size":".8"},"hacker-news":{"id":"hacker-news","prepend":"fab fa-"},"help":{"id":"question-circle"},"history":{"id":"clock","prepend":"far fa-"},"horizontal-rule":{"id":"minus"},"houzz":{"id":"houzz","prepend":"fab fa-"},"html":{"id":"html5","prepend":"fab fa-"},"image":{"id":"file-image","prepend":"far fa-"},"import":{"id":"upload"},"index":{"id":"spinner"},"information":{"id":"info-circle"},"instagram":{"id":"instagram","prepend":"fab fa-"},"internet-explorer":{"id":"internet-explorer","prepend":"fab fa-"},"ioxhost":{"id":"ioxhost","prepend":"fab fa-"},"java":{"id":"java","prepend":"fab fa-"},"joomla":{"id":"joomla","prepend":"fab fa-"},"js":{"id":"js","prepend":"fab fa-"},"jsfiddle":{"id":"jsfiddle","prepend":"fab fa-"},"keyboard":{"id":"keyboard","prepend":"far fa-"},"lastfm":{"id":"lastfm","prepend":"fab fa-"},"lastfm-square":{"id":"lastfm-square","prepend":"fab fa-"},"leanpub":{"id":"leanpub","prepend":"fab fa-"},"less":{"id":"less","prepend":"fab fa-"},"level-down":{"id":"level-down-alt"},"level-up":{"id":"level-up-alt"},"like":{"id":"thumbs-up"},"line-chart":{"id":"chart-line"},"link-external":{"id":"external-link-alt"},"link-external-alt":{"id":"external-link-square-alt"},"linkedin":{"id":"linkedin","prepend":"fab fa-"},"linkedin-in":{"id":"linkedin-in","prepend":"fab fa-"},"linux":{"id":"linux","prepend":"fab fa-"},"list-numbered":{"id":"list-ol"},"listgui_display":{"id":"desktop"},"listgui_filter":{"id":"filter"},"listgui_format":{"id":"indent"},"listgui_pagination":{"id":"book"},"listgui_output":{"id":"eye","prepend":"far fa-"},"listgui_column":{"id":"columns"},"listgui_tablesorter":{"id":"table"},"listgui_icon":{"id":"user"},"listgui_body":{"id":"align-justify"},"listgui_carousel":{"id":"slideshare","prepend":"fab fa-"},"listgui_sort":{"id":"sort-alpha-up"},"listgui_wikitext":{"id":"file-alt","prepend":"far fa-"},"listgui_caption":{"id":"align-center"},"log":{"id":"history"},"login":{"id":"sign-in-alt"},"logout":{"id":"sign-out-alt"},"long-arrow-down":{"id":"long-arrow-alt-down"},"long-arrow-left":{"id":"long-arrow-alt-left"},"long-arrow-right":{"id":"long-arrow-alt-right"},"long-arrow-up":{"id":"long-arrow-alt-up"},"mailbox":{"id":"inbox"},"magnifier":{"id":"search"},"maxcdn":{"id":"maxcdn","prepend":"fab fa-"},"medium":{"id":"medium","prepend":"fab fa-"},"menu":{"id":"bars"},"menu-extra":{"id":"chevron-down"},"menuitem":{"id":"angle-right"},"merge":{"id":"random"},"microsoft":{"id":"microsoft","prepend":"fab fa-"},"minimize":{"id":"compress"},"mixcloud":{"id":"mixcloud","prepend":"fab fa-"},"module":{"id":"square"},"modules":{"id":"shapes"},"modx":{"id":"modx","prepend":"fab fa-"},"money":{"id":"money-bill"},"more":{"id":"ellipsis-h"},"move":{"id":"exchange-alt"},"next":{"id":"arrow-right"},"notepad":{"id":"file-alt","prepend":"far fa-"},"notification":{"id":"bell","prepend":"far fa-"},"off":{"id":"power-off"},"ok":{"id":"check-circle"},"opencart":{"id":"opencart","prepend":"fab fa-"},"openid":{"id":"openid","prepend":"fab fa-"},"opera":{"id":"opera","prepend":"fab fa-"},"optin-monster":{"id":"optin-monster","prepend":"fab fa-"},"page-break":{"id":"cut"},"pagelines":{"id":"pagelines","prepend":"fab fa-"},"paypal":{"id":"paypal","prepend":"fab fa-"},"pdf":{"id":"file-pdf","prepend":"far fa-"},"pencil":{"id":"pencil-alt"},"permission":{"id":"key"},"pie-chart":{"id":"chart-pie"},"pied-piper":{"id":"pied-piper","prepend":"fab fa-"},"pied-piper-alt":{"id":"pied-piper-alt","prepend":"fab fa-"},"pied-piper-pp":{"id":"pied-piper-pp","prepend":"fab fa-"},"pinterest":{"id":"pinterest","prepend":"fab fa-"},"pinterest-p":{"id":"pinterest-p","prepend":"fab fa-"},"pinterest-square":{"id":"pinterest-square","prepend":"fab fa-"},"plugin":{"id":"puzzle-piece"},"popup":{"id":"list-alt","prepend":"far fa-"},"post":{"id":"pencil-alt"},"powerpoint":{"id":"file-powerpoint","prepend":"far fa-"},"previous":{"id":"arrow-left"},"qq":{"id":"qq","prepend":"fab fa-"},"quotes":{"id":"quote-left"},"ranking":{"id":"sort-numeric-down"},"reddit":{"id":"reddit","prepend":"fab fa-"},"reddit-alien":{"id":"reddit-alien","prepend":"fab fa-"},"reddit-square":{"id":"reddit-square","prepend":"fab fa-"},"refresh":{"id":"sync"},"remove":{"id":"times"},"renren":{"id":"renren","prepend":"fab fa-"},"repeat":{"id":"redo"},"safari":{"id":"safari","prepend":"fab fa-"},"sass":{"id":"sass","prepend":"fab fa-"},"scissors":{"id":"cut"},"scribd":{"id":"scribd","prepend":"fab fa-"},"screencapture":{"id":"camera"},"selectall":{"id":"file-alt"},"send":{"id":"paper-plane"},"settings":{"id":"wrench"},"sharethis":{"id":"share-alt"},"shorten":{"id":"crop"},"simplybuilt":{"id":"simplybuilt","prepend":"fab fa-"},"skyatlas":{"id":"skyatlas","prepend":"fab fa-"},"skype":{"id":"skype","prepend":"fab fa-"},"slack":{"id":"slack","prepend":"fab fa-"},"smile":{"id":"smile","prepend":"far fa-"},"snapchat":{"id":"snapchat","prepend":"fab fa-"},"snapchat-ghost":{"id":"snapchat-ghost","prepend":"fab fa-"},"snapchat-square":{"id":"snapchat-square","prepend":"fab fa-"},"sort-asc":{"id":"sort-up"},"sort-alpha-asc":{"id":"sort-alpha-up"},"sort-alpha-desc":{"id":"sort-alpha-down"},"sort-amount-asc":{"id":"sort-amount-up"},"sort-amount-desc":{"id":"sort-amount-down"},"sort-desc":{"id":"sort-down"},"sort-down":{"id":"sort-down"},"sort-numeric-asc":{"id":"sort-numeric-up"},"sort-numeric-desc":{"id":"sort-numeric-down"},"sort-up":{"id":"sort-up"},"soundcloud":{"id":"soundcloud","prepend":"fab fa-"},"spotify":{"id":"spotify","prepend":"fab fa-"},"stack-exchange":{"id":"stack-exchange","prepend":"fab fa-"},"stack-overflow":{"id":"stack-overflow","prepend":"fab fa-"},"star-empty":{"id":"star","prepend":"far fa-"},"star-empty-selected":{"id":"star","prepend":"far fa-","class":"text-success"},"star-half-rating":{"id":"star-half","prepend":"far fa-"},"star-half-selected":{"id":"star-half","prepend":"far fa-","class":"text-success"},"star-selected":{"id":"star","class":"text-success"},"status-open":{"id":"circle","style":"color:green"},"status-pending":{"id":"adjust","style":"color:orange"},"status-closed":{"id":"times-circle","prepend":"far fa-","style":"color:grey"},"steam":{"id":"steam","prepend":"fab fa-"},"steam-square":{"id":"steam-square","prepend":"fab fa-"},"stop-watching":{"id":"eye-slash","prepend":"far fa-"},"structure":{"id":"sitemap"},"stumbleupon":{"id":"stumbleupon","prepend":"fab fa-"},"success":{"id":"check"},"textfile":{"id":"file-alt","prepend":"far fa-"},"themeisle":{"id":"themeisle","prepend":"fab fa-"},"three-d":{"id":"cube"},"ticket":{"id":"ticket-alt"},"time":{"id":"clock","prepend":"far fa-"},"title":{"id":"text-width"},"toggle-left":{"id":"caret-square-left","prepend":"far fa-"},"toggle-off":{"id":"toggle-off"},"toggle-on":{"id":"toggle-on"},"toggle-right":{"id":"caret-square-right","prepend":"far fa-"},"trackers":{"id":"database"},"translate":{"id":"language"},"trash":{"id":"trash-alt","prepend":"far fa-"},"trello":{"id":"trello","prepend":"fab fa-"},"tripadvisor":{"id":"tripadvisor","prepend":"fab fa-"},"tumblr":{"id":"tumblr","prepend":"fab fa-"},"tumblr-square":{"id":"tumblr-square","prepend":"fab fa-"},"twitch":{"id":"twitch","prepend":"fab fa-"},"twitter":{"id":"twitter","prepend":"fab fa-"},"twitter-square":{"id":"twitter-square","prepend":"fab fa-"},"unlike":{"id":"thumbs-down"},"up":{"id":"sort-up"},"usb":{"id":"usb","prepend":"fab fa-"},"viacoin":{"id":"viacoin","prepend":"fab fa-"},"video":{"id":"file-video","prepend":"far fa-"},"video_file":{"id":"file-video","prepend":"far fa-"},"view":{"id":"search-plus"},"vimeo":{"id":"vimeo-square","prepend":"fab fa-"},"vine":{"id":"vine","prepend":"fab fa-"},"vk":{"id":"vk","prepend":"fab fa-"},"warning":{"id":"exclamation-triangle"},"watch":{"id":"eye","prepend":"far fa-"},"watch-group":{"id":"users"},"weibo":{"id":"weibo","prepend":"fab fa-"},"whatsapp":{"id":"whatsapp","prepend":"fab fa-"},"windows":{"id":"windows","prepend":"fab fa-"},"wiki":{"id":"file-alt","prepend":"far fa-"},"wizard":{"id":"magic"},"word":{"id":"file-word","prepend":"far fa-"},"wysiwyg":{"id":"file-alt"},"xbox":{"id":"xbox","prepend":"fab fa-"},"xing":{"id":"xing","prepend":"fab fa-"},"xing-square":{"id":"xing-square","prepend":"fab fa-"},"yahoo":{"id":"yahoo","prepend":"fab fa-"},"youtube":{"id":"youtube","prepend":"fab fa-"},"youtube-square":{"id":"youtube-square","prepend":"fab fa-"},"zip":{"id":"file-archive","prepend":"far fa-"}},"tag":"span","prepend":"fas fa-","append":" fa-fw","rotate":{"90":" fa-rotate-90","180":" fa-rotate-180","270":" fa-rotate-270","horizontal":" fa-flip-horizontal","vertical":" fa-flip-vertical"}}
+var zoomToFoundLocation = "street";
+
+var bootstrapButton;
+if (typeof $.fn.button.noConflict === "function") {
+	bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
+	$.fn.bootstrapBtn = bootstrapButton            // give $().bootstrapBtn the Bootstrap functionality
+}
+
+					function submitSearch1() {
+						var $f = $('#search-module-form1');
+						if ($f.attr('action') !== "tiki-editpage.php" && $f.data('page_selected') === $("#search_mod_input_1").val()) {
+							if ($f.find('input[name="find"]').length) {
+								$f.find('input[name="find"]').val($f.data('page_selected'));
+							} else {
+								$f.append($('<input name="find">').val($f.data('page_selected')));
+							}
+							$f.attr('action', 'tiki-listpages.php');
+						} else if ($f.attr('action') == "#") {
+							$f.attr('action', 'tiki-searchindex.php');
+						}
+						$exact = $f.find("input[name=exact_match]");
+						if ($exact.val() != "y") {
+							$exact.remove(); // seems exact_match is true even if empty
+						}
+						return true;
+					}
+				
+// js 2 
+
+try {
+	var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+	setCookie("local_tz", timezone);
+} catch (e) {}
+
+// this is used by tiki-confirm.js checkTimeout, so needs to be always set
+var now = new Date();
+
+if (! timezone) {
+	function inArray(item, array) {
+		for (var i in array) {
+			if (array[i] === item) {
+				return i;
+			}
+		}
+		return false;
+	}
+	var allTimeZoneCodes = ["ACDT","ACST","ADDT","ADT","AEDT","AEST","AHDT","AHST","AKDT","AKST","AMT","APT","AST","AWDT","AWST","AWT","BDST","BDT","BMT","BOST","BST","CAST","CAT","CDDT","CDT","CEMT","CEST","CET","CMT","CPT","CST","CWT","CHST","DMT","EAT","EDDT","EDT","EEST","EET","EMT","EPT","EST","EWT","FFMT","FMT","GMT","GST","HDT","HKST","HKT","HMT","HST","IDDT","IDT","IMT","IST","JDT","JMT","JST","KDT","KMT","KST","LST","MDDT","MDST","MDT","MMT","MPT","MSD","MSK","MST","MWT","NDDT","NDT","NPT","NST","NWT","NZDT","NZMT","NZST","PDDT","PDT","PKST","PKT","PLMT","PMMT","PMT","PPMT","PPT","PST","PWT","QMT","RMT","SAST","SDMT","SET","SJMT","SMT","SST","TBMT","TMT","UCT","UTC","WAST","WAT","WEMT","WEST","WET","WIB","WITA","WIT","WMT","YDDT","YDT","YPT","YST","YWT","A","B","C","D","E","F","G","H","I","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+	var now_string = now.toString();
+	var offsethours = - now.getTimezoneOffset() / 60;
+	setCookie("local_tzoffset", offsethours);
+	var m = now_string.match(/[ \(]([A-Z]{3,6})[ \)]?[ \d]*$/);	// try three or more char tz first at the end or just before the year
+	if (!m) {
+		m = now_string.match(/[ \(]([A-Z]{1,6})[ \)]?[ \d]*$/);	// might be a "military" one if not
+	}
+	if (m) {
+		m = m[1];
+	} else {	// IE (sometimes) gives UTC +offset instead of the abbreviation
+		// sadly this workaround will fail for non-whole hour offsets
+		var hours = - now.getTimezoneOffset() / 60;
+		m = "GMT" + (hours > 0 ? "+" : "") + hours;
+	}
+	// Etc/GMT+ is equivalent to GMT-
+	if (m.substring(0,4) == "GMT+") {
+		m = "Etc/GMT-" + m.substring(4);
+		setCookie("local_tz", m);
+	}
+	if (m.substring(0,4) == "GMT-") {
+		m = "Etc/GMT+" + m.substring(4);
+		setCookie("local_tz", m);
+	}
+	if (inArray(m, allTimeZoneCodes)) {
+		setCookie("local_tz", m);
+	}
+}
+
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+$(document).ready(function(){
+// jq_onready 0 
+$("article").fitVids();
+$("time.timeago").timeago(); jQuery.timeago.settings.allowFuture = true;
+$(".convert-mailto").removeClass("convert-mailto").each(function () {
+				var address = $(this).data("encode-name") + "@" + $(this).data("encode-domain");
+				$(this).attr("href", "mailto:" + address).text(address);
+			});
+$('#mo1-link').mouseover(function(event) {
+	var pos  = $(this).position();
+	$('#mo1').css('position', 'absolute').css('left', pos.left + 5 + 'px').css('top', pos.top + 24 + 'px');
+	showJQ('#mo1', '', 'normal');  });
+$('#mo1-link').mouseout(function(event) { setTimeout(function() {hideJQ('#mo1', '', 'normal')}, 0); });
+$('#mo2-link').mouseover(function(event) {
+	var pos  = $(this).position();
+	$('#mo2').css('position', 'absolute').css('left', pos.left + 5 + 'px').css('top', pos.top + 24 + 'px');
+	showJQ('#mo2', '', 'normal');  });
+$('#mo2-link').mouseout(function(event) { setTimeout(function() {hideJQ('#mo2', '', 'normal')}, 0); });
+$('#mo3-link').mouseover(function(event) {
+	var pos  = $(this).position();
+	$('#mo3').css('position', 'absolute').css('left', pos.left + 5 + 'px').css('top', pos.top + 24 + 'px');
+	showJQ('#mo3', '', 'normal');  });
+$('#mo3-link').mouseout(function(event) { setTimeout(function() {hideJQ('#mo3', '', 'normal')}, 0); });
+$('#mo4-link').mouseover(function(event) {
+	var pos  = $(this).position();
+	$('#mo4').css('position', 'absolute').css('left', pos.left + 5 + 'px').css('top', pos.top + 24 + 'px');
+	showJQ('#mo4', '', 'normal');  });
+$('#mo4-link').mouseout(function(event) { setTimeout(function() {hideJQ('#mo4', '', 'normal')}, 0); });
+$('#mo5-link').mouseover(function(event) {
+	var pos  = $(this).position();
+	$('#mo5').css('position', 'absolute').css('left', pos.left + 5 + 'px').css('top', pos.top + 24 + 'px');
+	showJQ('#mo5', '', 'normal');  });
+$('#mo5-link').mouseout(function(event) { setTimeout(function() {hideJQ('#mo5', '', 'normal')}, 0); });
+$('#mo6-link').mouseover(function(event) {
+	var pos  = $(this).position();
+	$('#mo6').css('position', 'absolute').css('left', pos.left + 5 + 'px').css('top', pos.top + 24 + 'px');
+	showJQ('#mo6', '', 'normal');  });
+$('#mo6-link').mouseout(function(event) { setTimeout(function() {hideJQ('#mo6', '', 'normal')}, 0); });
+});
+//--><!]]>
+</script>
+
+	
+		<script type="text/javascript" src="themes/wikisuite/js/keymaster.js"></script>
+<script type="text/javascript" src="themes/wikisuite/js/wikisuite.js"></script>
+
+</body>
+</html>
