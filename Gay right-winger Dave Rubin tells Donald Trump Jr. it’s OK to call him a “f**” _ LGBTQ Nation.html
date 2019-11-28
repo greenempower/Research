@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="e503e72ff23138cd5f096b74-text/javascript">window.grumi = { key: '85f197b8-c447-4e43-9580-f9ed9106dca5'};</script>
+<script src="//rumcdn.geoedge.be/85f197b8-c447-4e43-9580-f9ed9106dca5/grumi-ip.js" async type="e503e72ff23138cd5f096b74-text/javascript"></script>
+
+<script type="e503e72ff23138cd5f096b74-text/javascript">
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function(){
+       var gads = document.createElement("script");
+        gads.async = true;
+        gads.type = "text/javascript";
+        var useSSL = "https:" == document.location.protocol;
+        gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+        var node = document.getElementsByTagName("script")[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+</script>
+
+<script type="e503e72ff23138cd5f096b74-text/javascript">
+  var AdBridg = AdBridg || {};
+  AdBridg.cmd = AdBridg.cmd || [];
+  (function() {
+      var adb = document.createElement("script");
+      adb.async = true;
+      adb.type = "text/javascript";
+      adb.src = '//prod.adspsp.com/adb.2634970.min.js';
+      var node = document.getElementsByTagName('script')[0];
+      node.parentNode.insertBefore(adb, node);
+
+      // Return control to GPT if the AdBridg library fails to load.
+      adb.onerror = function() {
+        console.log('Fallback: ')
+        if (AdBridg.exists) { return; }
+        document.createElement('IMG').src = '//adspsp.com/pt/2634970/3/1/?e=0';
+        var dq = [], es;
+        dq.process = function() { while(dq.length) { googletag.display(dq.shift()); }}
+        AdBridg.defineSlot = function(p, s, d) { return googletag.defineSlot(p, s, d).addService(googletag.pubads()); }
+        AdBridg.defineOutOfPageSlot = function(p, d) { return googletag.defineOutOfPageSlot(p, d).addService(googletag.pubads()); }
+        AdBridg.destroySlots = function(s) { return googletag.destroySlots(s); }
+        AdBridg.display = function(d) { dq.push(d); if (es) { dq.process(); }}
+        AdBridg.refresh = function(s, o) { googletag.pubads().refresh(s, o); }
+        AdBridg.render = function() { }
+        AdBridg.serve = function() { googletag.enableServices(); es=1; dq.process(); }
+        AdBridg.sizeMapping = function() { return googletag.sizeMapping(); }
+        AdBridg.useSizeMapping = function() { }
+        AdBridg.cmd.push = function(f) {
+          if (typeof(f)=='object') {
+            var api_fallback = function(o) {
+              googletag.cmd.push(function() {
+                var u=AdBridg.defineSlot(o.gpt_path,o.size||[],o.dom_id);
+                if(o.size_map) {
+                  var m = googletag.sizeMapping();
+                  for(var oi=0;oi<o.size_map.length;oi++){m=m.addSize(o.size_map[oi].viewport, o.size_map[oi].sizes);}
+                  u.defineSizeMapping(m.build());
+                }
+                if(o.events) {
+                  if(o.events["gpt.defined"]){o.events["gpt.defined"](u);}
+                  var fl = function(a,b){if(o.events[a]){googletag.pubads().addEventListener(b,function(e){if(e.slot===u){o.events[a](u,e)}})}}
+                  fl("gpt.rendered",'slotRenderEnded');
+                  fl("gpt.viewed",'impressionViewable');
+                  fl("gpt.visibilityChanged",'slotVisibilityChanged');
+                }
+              });
+            }
+            if(f.length){for(var i=0;i<f.length;++i){api_fallback(f[i]);}}else{api_fallback(f);}
+            f=function(){AdBridg.serve()}
+          }
+          return googletag.cmd.push(f);
+        }
+        while (AdBridg.cmd.length) { AdBridg.cmd.push(AdBridg.cmd.shift()); }
+      }
+  })();
+</script>
+<script type="e503e72ff23138cd5f096b74-text/javascript">
+AdBridg.cmd.push(function () {
+	googletag.pubads().collapseEmptyDivs();
+	googletag.pubads().setTargeting('articleid', ['291941']);
+	googletag.pubads().setTargeting('Tag', ['articlepage','dave rubin','donald trump jr','gay conservatives','gay republicans','slade','the rubin report','bias watch']);
+	googletag.pubads().setTargeting('UGC', ['no']);
+	
+  });
+</script>
+<script type="e503e72ff23138cd5f096b74-text/javascript">
+var isHomePage = false;	
+// -----------------------------------------------------------------------------------------
+// Declare all ads that will be on page.
+// -----------------------------------------------------------------------------------------
+var gptAdSlots = {};
+AdBridg.cmd.push([
+		{
+		  gpt_path: '/4564944/lgbtqnation/article',
+		  dom_id:   'div-gpt-ad-leader1',
+		  size_map: [
+		   { viewport: [0, 0], sizes: [[320, 100], [320, 50]] },
+ { viewport: [729, 400], sizes:  [[728, 90]] },
+ { viewport: [1000, 400], sizes:  [[728, 90], [970, 250], [970, 90]] },
+		  ],
+		  events: {
+		    "gpt.defined": function(gpt_slot) {
+				gpt_slot.setTargeting('ad-location',['Leader 1']);
+		      gptAdSlots.leader1 = gpt_slot;
+		    }
+		  }
+		},
+				{
+		  gpt_path: '/4564944/lgbtqnation/article',
+		  dom_id:   'div-gpt-ad-box1',
+		  size_map: [
+		   { viewport: [0, 0], sizes: [] },
+ { viewport: [729, 400], sizes:  [[300, 600],[300, 250]] },
+		  ],
+		  events: {
+		    "gpt.defined": function(gpt_slot) {
+				gpt_slot.setTargeting('ad-location',['Box 1']);
+		      gptAdSlots.box1 = gpt_slot;
+		    }
+		  }
+		},
+				{
+		  gpt_path: '/4564944/lgbtqnation/article',
+		  dom_id:   'div-gpt-ad-box2',
+		  size_map: [
+		   { viewport: [0, 0], sizes: [[300, 250]] },
+ { viewport: [729, 400], sizes:  [[300, 600],[300, 250]] },
+		  ],
+		  events: {
+		    "gpt.defined": function(gpt_slot) {
+				gpt_slot.setTargeting('ad-location',['Box 2']);
+		      gptAdSlots.box2 = gpt_slot;
+		    }
+		  }
+		},
+				{
+		  gpt_path: '/4564944/lgbtqnation/article',
+		  dom_id:   'div-gpt-ad-box3',
+		  size_map: [
+		   { viewport: [0, 0], sizes: [[300, 250]] },
+ { viewport: [729, 400], sizes:  [[300, 600],[300, 250]] },
+		  ],
+		  events: {
+		    "gpt.defined": function(gpt_slot) {
+				gpt_slot.setTargeting('ad-location',['Box 3']);
+		      gptAdSlots.box3 = gpt_slot;
+		    }
+		  }
+		},
+				{
+		  gpt_path: '/4564944/lgbtqnation/article',
+		  dom_id:   'div-gpt-ad-inarticle1',
+		  size_map: [
+		   { viewport: [0, 0], sizes: [[320,100],[300, 250]] },
+ { viewport: [729, 400], sizes:  [] },
+		  ],
+		  events: {
+		    "gpt.defined": function(gpt_slot) {
+				gpt_slot.setTargeting('ad-location',['In Article 1']);
+		      gptAdSlots.inarticle1 = gpt_slot;
+		    }
+		  }
+		},
+				{
+		  gpt_path: '/4564944/lgbtqnation/article',
+		  dom_id:   'div-gpt-ad-inarticle2',
+		  size_map: [
+		   { viewport: [0, 0], sizes: [[320,100],[300, 250]] },
+ { viewport: [729, 400], sizes:  [] },
+		  ],
+		  events: {
+		    "gpt.defined": function(gpt_slot) {
+				gpt_slot.setTargeting('ad-location',['In Article 2']);
+		      gptAdSlots.inarticle2 = gpt_slot;
+		    }
+		  }
+		},
+				{
+		  gpt_path: '/4564944/lgbtqnation/article',
+		  dom_id:   'div-gpt-ad-inarticle3',
+		  size_map: [
+		   { viewport: [0, 0], sizes: [[320,100],[300, 250]] },
+ { viewport: [729, 400], sizes:  [] },
+		  ],
+		  events: {
+		    "gpt.defined": function(gpt_slot) {
+				gpt_slot.setTargeting('ad-location',['In Article 3']);
+		      gptAdSlots.inarticle3 = gpt_slot;
+		    }
+		  }
+		},
+				{
+		  gpt_path: '/4564944/lgbtqnation/article',
+		  dom_id:   'div-gpt-ad-inarticle4',
+		  size_map: [
+		   { viewport: [0, 0], sizes: [[320,100],[300, 250]] },
+ { viewport: [729, 400], sizes:  [] },
+		  ],
+		  events: {
+		    "gpt.defined": function(gpt_slot) {
+				gpt_slot.setTargeting('ad-location',['In Article 4']);
+		      gptAdSlots.inarticle4 = gpt_slot;
+		    }
+		  }
+		},
+				{
+		  gpt_path: '/4564944/lgbtqnation/article',
+		  dom_id:   'div-gpt-ad-inarticle5',
+		  size_map: [
+		   { viewport: [0, 0], sizes: [[320,100],[300, 250]] },
+ { viewport: [729, 400], sizes:  [] },
+		  ],
+		  events: {
+		    "gpt.defined": function(gpt_slot) {
+				gpt_slot.setTargeting('ad-location',['In Article 5']);
+		      gptAdSlots.inarticle5 = gpt_slot;
+		    }
+		  }
+		},
+				{
+		  gpt_path: '/4564944/lgbtqnation/article',
+		  dom_id:   'div-gpt-ad-inarticle6',
+		  size_map: [
+		   { viewport: [0, 0], sizes: [[320,100],[300, 250]] },
+ { viewport: [729, 400], sizes:  [] },
+		  ],
+		  events: {
+		    "gpt.defined": function(gpt_slot) {
+				gpt_slot.setTargeting('ad-location',['In Article 6']);
+		      gptAdSlots.inarticle6 = gpt_slot;
+		    }
+		  }
+		},
+				{
+		  gpt_path: '/4564944/lgbtqnation/article',
+		  dom_id:   'div-gpt-ad-inline1',
+		  size_map: [
+		   { viewport: [0, 0], sizes: [[320,100],[320, 50]] },
+ { viewport: [729, 400], sizes:  [] },
+		  ],
+		  events: {
+		    "gpt.defined": function(gpt_slot) {
+				gpt_slot.setTargeting('ad-location',['Inline 1']);
+		      gptAdSlots.inline1 = gpt_slot;
+		    }
+		  }
+		},
+				{
+		  gpt_path: '/4564944/lgbtqnation/article',
+		  dom_id:   'div-gpt-ad-inline2',
+		  size_map: [
+		   { viewport: [0, 0], sizes: [[320,100],[320, 50]] },
+ { viewport: [729, 400], sizes:  [] },
+		  ],
+		  events: {
+		    "gpt.defined": function(gpt_slot) {
+				gpt_slot.setTargeting('ad-location',['Inline 2']);
+		      gptAdSlots.inline2 = gpt_slot;
+		    }
+		  }
+		},
+				{
+		  gpt_path: '/4564944/lgbtqnation/article',
+		  dom_id:   'div-gpt-ad-leader2',
+		  size_map: [
+		   { viewport: [0, 0], sizes: [[320, 100], [320, 50]] },
+ { viewport: [729, 400], sizes:  [[728, 90]] },
+ { viewport: [1000, 400], sizes:  [[728, 90], [970, 250], [970, 90]] },
+		  ],
+		  events: {
+		    "gpt.defined": function(gpt_slot) {
+				gpt_slot.setTargeting('ad-location',['Leader 2']);
+		      gptAdSlots.leader2 = gpt_slot;
+		    }
+		  }
+		},
+			
+]);	//close ad units cmd.push
+</script><title>Gay right-winger Dave Rubin tells Donald Trump Jr. it&#8217;s OK to call him a &#8220;f**&#8221; / LGBTQ Nation</title>
+<link rel='dns-prefetch' href='//lgbtqnation.disqus.com' />
+<link rel='dns-prefetch' href='//s7.addthis.com' />
+<link rel='dns-prefetch' href='//a.opmnstr.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="LGBTQ Nation &raquo; Feed" href="https://www.lgbtqnation.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="LGBTQ Nation &raquo; Gay right-winger Dave Rubin tells Donald Trump Jr. it&#8217;s OK to call him a &#8220;f**&#8221; Comments Feed" href="https://www.lgbtqnation.com/2019/11/gay-right-winger-dave-rubin-tells-donald-trump-jr-ok-call-f/feed/" />
+
+<script type="text/javascript" data-cfasync="false">
+	var mi_version         = '7.9.0';
+	var mi_track_user      = true;
+	var mi_no_track_reason = '';
+	
+	var disableStr = 'ga-disable-UA-1203094-4';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-1203094-4', 'auto');
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('require', 'displayfeatures');
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + mi_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+					})();
+		}
+</script>
+
+<link crossorigin="anonymous" rel='stylesheet' id='google-fonts-css' href='https://fonts.googleapis.com/css?family=Roboto%3A400%2C400i%2C700%2C700i%7CPT+Serif%3A400%2C400i%2C700&#038;ver=5.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='lgbtqnation-2019-vendors-style-css' href='https://www.lgbtqnation.com/content/themes/lgbtqnation-2019/assets/styles/vendors.css?ver=v20190905' type='text/css' media='all' />
+<link rel='stylesheet' id='lgbtqnation-2019-style-css' href='https://www.lgbtqnation.com/content/themes/lgbtqnation-2019/assets/styles/main.css?ver=v20191109' type='text/css' media='all' />
+<script type="e503e72ff23138cd5f096b74-text/javascript">
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,exe,js,pdf,ppt,tgz,zip,xls","inbound_paths":"[]","home_url":"https:\/\/www.lgbtqnation.com","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type="e503e72ff23138cd5f096b74-text/javascript" src='https://www.lgbtqnation.com/content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=7.9.0'></script>
+<script type="e503e72ff23138cd5f096b74-text/javascript" src='https://www.lgbtqnation.com/wp/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type="e503e72ff23138cd5f096b74-text/javascript" src='https://www.lgbtqnation.com/wp/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type="e503e72ff23138cd5f096b74-text/javascript" src='https://www.lgbtqnation.com/content/themes/lgbtqnation-2019/assets/scripts/main.js?ver=v190508'></script>
+<script type="e503e72ff23138cd5f096b74-text/javascript" src='https://s7.addthis.com/js/300/addthis_widget.js?ver=5.2.4#pubid=ra-528f7b564203801f&#038;data_ga_social=1&#038;data_track_addressbar=1&#038;data_ga_property=UA-1203094-4'></script>
+<script type='text/javascript' data-cfasync="false" id="omapi-script" async="async" src='https://a.opmnstr.com/app/js/api.min.js'></script>
+<link rel='prev' title='Rhode Island &#038; New York restore military benefits to LGBTQ veterans' href='https://www.lgbtqnation.com/2019/11/rhode-island-new-york-restore-military-benefits-dishonorably-discharged-lgbtq-veterans/' />
+<link rel='next' title='A drag queen news reporter snatched wigs at the Trump impeachment hearings' href='https://www.lgbtqnation.com/2019/11/drag-queen-news-reporter-snatched-wigs-trump-impeachment-hearings/' />
+<link rel="canonical" href="https://www.lgbtqnation.com/2019/11/gay-right-winger-dave-rubin-tells-donald-trump-jr-ok-call-f/" />
+<meta property="og:site_name" content="LGBTQ Nation" /> <meta name="description" content="&quot;You can call me whatever you want. You could call me a f** right now and it wouldn&#039;t mean anything to me..." />
+<meta property="og:description" content="&quot;You can call me whatever you want. You could call me a f** right now and it wouldn&#039;t mean anything to me...">
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.lgbtqnation.com/2019/11/gay-right-winger-dave-rubin-tells-donald-trump-jr-ok-call-f/" />
+<meta property="og:title" content="Gay right-winger Dave Rubin tells Donald Trump Jr. it&#8217;s OK to call him a &#8220;f**&#8221;" />
+<meta property="og:image" content="https://lgbtqnation-assets.imgix.net/2019/11/dave-rubin-donald-trump-jr.jpg?fit=crop&auto=format&auto=compress&crop=faces" />
+<meta property="og:image:width" content="1000" />
+<meta property="og:image:height" content="676" />
+<meta name="twitter:image" content="https://lgbtqnation-assets.imgix.net/2019/11/dave-rubin-donald-trump-jr.jpg?fit=crop&auto=format&auto=compress&crop=faces" />
+<meta property="article:published_time" content="2019-11-13T15:17:41-05:00" />
+<meta property="article:modified_time" content="2019-11-13T15:45:23-05:00" />
+<meta name="twitter:url" content="https://www.lgbtqnation.com/2019/11/gay-right-winger-dave-rubin-tells-donald-trump-jr-ok-call-f/" />
+<meta name="twitter:title" content="Gay right-winger Dave Rubin tells Donald Trump Jr. it&#8217;s OK to call him a &#8220;f**&#8221;" />
+<meta name="twitter:description" content="&quot;You can call me whatever you want. You could call me a f** right now and it wouldn&#039;t mean anything to me..." />
+<meta name="news_keywords" content="Dave Rubin, Donald Trump Jr., gay conservatives, gay Republicans, Slade, The Rubin Report"><meta property="article:tags" content="Dave Rubin, Donald Trump Jr., gay conservatives, gay Republicans, Slade, The Rubin Report"><meta name="author" property="author" content="Alex Bollinger" /><script type="e503e72ff23138cd5f096b74-text/javascript">!(function(o,n,t){t=o.createElement(n),o=o.getElementsByTagName(n)[0],t.async=1,t.src="https://niftyhospital.com/v2/0/vjcd-PCCGgX7XYyneAaa_GLs_v-WzLXVOr_-xH3_Z0JZmq5INZXG1JirQ9kvhPKPJ2_",o.parentNode.insertBefore(t,o)})(document,"script"),(function(o,n){o[n]=o[n]||function(){(o[n].q=o[n].q||[]).push(arguments)}})(window,"admiral");!(function(n,e,r,t){function o(){if((function o(t){try{return(t=localStorage.getItem("v4ac1eiZr0"))&&0<t.split(",")[4]}catch(n){}return!1})()){var t=n[e].pubads();typeof t.setTargeting===r&&t.setTargeting("admiral-engaged","true")}}(t=n[e]=n[e]||{}).cmd=t.cmd||[],typeof t.pubads===r?o():typeof t.cmd.unshift===r?t.cmd.unshift(o):t.cmd.push(o)})(window,"googletag","function");</script>
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@lgbtqnation" />
+<meta name="twitter:url" content="https://www.lgbtqnation.com/2019/11/gay-right-winger-dave-rubin-tells-donald-trump-jr-ok-call-f/" />
+<meta name="twitter:title" content="Gay right-winger Dave Rubin tells Donald Trump Jr. it&#8217;s OK to call him a &#8220;f**&#8221;" />
+<meta name="twitter:description" content="&quot;You can call me whatever you want. You could call me a f** right now &hellip;" />
+<meta name="twitter:image" content="https://lgbtqnation-assets.s3.amazonaws.com/assets/2019/11/dave-rubin-donald-trump-jr.jpg"><meta name="twitter:image:alt" content="Dave Rubin">
+<script type="e503e72ff23138cd5f096b74-text/javascript">var algolia = {"debug":false,"application_id":"6S92GABH7H","search_api_key":"5a23fa4f6d5c6a0db3ca57cf2f559d04","powered_by_enabled":false,"query":"","autocomplete":{"sources":[{"index_id":"searchable_posts","index_name":"lgbtqnation_searchable_posts","label":"All posts","admin_name":"All posts","position":10,"max_suggestions":5,"tmpl_suggestion":"autocomplete-post-suggestion","enabled":true},{"index_id":"terms_category","index_name":"lgbtqnation_terms_category","label":"Categories","admin_name":"Categories","position":20,"max_suggestions":3,"tmpl_suggestion":"autocomplete-term-suggestion","enabled":true},{"index_id":"terms_post_tag","index_name":"lgbtqnation_terms_post_tag","label":"Tags","admin_name":"Tags","position":20,"max_suggestions":3,"tmpl_suggestion":"autocomplete-term-suggestion","enabled":true}],"input_selector":"input[name='s']:not('.no-autocomplete')"},"indices":{"searchable_posts":{"name":"lgbtqnation_searchable_posts","id":"searchable_posts","enabled":true,"replicas":[]},"terms_category":{"name":"lgbtqnation_terms_category","id":"terms_category","enabled":true,"replicas":[]},"terms_post_tag":{"name":"lgbtqnation_terms_post_tag","id":"terms_post_tag","enabled":true,"replicas":[]}}};</script><link rel="amphtml" href="https://www.lgbtqnation.com/2019/11/gay-right-winger-dave-rubin-tells-donald-trump-jr-ok-call-f/?amp"> <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#ffc40d">
+<meta name="theme-color" content="#ffffff">
+<meta property="fb:pages" content="162245191716" />
+<meta property="fb:app_id" content="139331137822" />
+<meta property="article:publisher" content="https://www.facebook.com/lgbtqnation" />
+</head>
+<body class="post-template-default single single-post postid-291941 single-format-standard category-bias-watch">
+<div id="top-of-page" style="display:none;"></div>
+<div class="ad-leaderboard-header" id="div-gpt-ad-leader1">
+<script type="e503e72ff23138cd5f096b74-text/javascript">
+		AdBridg.cmd.push(function() { AdBridg.display('div-gpt-ad-leader1'); });
+	</script>
+</div>
+<header class="site-header">
+<div class="container header-container">
+<div class="header-section logo-area">
+<div class="lgbtq-logo">
+<a href="https://www.lgbtqnation.com">
+<img src="/images/logos/lgbtq-nation-logo.svg" height="60" alt="LGBTQ Nation" class="wide-logo" />
+<img src="/images/logos/lgbtq-nation-logo-stacked.svg" height="54" alt="LGBTQ Nation" class="stacked-logo" />
+</a>
+</div>
+</div>
+<div class="header-section menu"><ul id="menu-home-page-menu" class="header-menu"><li id="menu-item-288698" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-288698"><a href="https://www.lgbtqnation.com/">Home</a></li>
+<li id="menu-item-274580" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-274580"><a href="https://www.lgbtqnation.com/news/">News</a></li>
+<li id="menu-item-274582" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-274582"><a href="https://www.lgbtqnation.com/politics/">Politics</a></li>
+<li id="menu-item-274579" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-274579"><a href="https://www.lgbtqnation.com/life/">Life</a></li>
+<li id="menu-item-274584" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-274584"><a href="https://www.lgbtqnation.com/health/">Health</a></li>
+<li id="menu-item-276012" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-276012"><a href="https://www.lgbtqnation.com/election/">Election</a></li>
+</ul></div>
+<div class="header-section social">
+<ul class="social-list">
+<li> <a href="https://mailchi.mp/lgbtqnation.com/subscribe" class="btn btn-default" target="_blank" rel="noopener"><i class="mdicon mdicon-mail_outline mdicon--first"></i><span>Subscribe</span></a></li>
+<li><a href="https://twitter.com/lgbtqnation" target="_blank" rel="noopener"><i class="mdicon mdicon-twitter"></i></a></li>
+<li><a href="https://facebook.com/lgbtqnation" target="_blank" rel="noopener"><i class="mdicon mdicon-facebook"></i></a></li>
+<li><a href="https://instagram.com/lgbtqnation" target="_blank" rel="noopener"><i class="mdicon mdicon-instagram"></i></a></li>
+</ul>
+</div>
+<div class="header-section search">
+<a href="/?s=" class="search-link"><i class="mdicon mdicon-search"></i></a>
+</div>
+</div>
+<div class="header-search-dropdown ">
+<div class="container">
+<form method="get" action="/">
+<input type="text" name="s" class="search-form__input" placeholder="Search" value="">
+<input type="submit" class="btn btn-primary" value="Search">
+</form>
+</div>
+</div>
+</header><div class="site-content single-entry">
+<div class="article-header">
+<div class="container">
+<header class="single-header clearfix">
+<div class="single-header-inner">
+<a class="kicker kicker-bias-watch" href="https://www.lgbtqnation.com/bias-watch/">Bias Watch</a>
+<h1 class="entry-title">Gay right-winger Dave Rubin tells Donald Trump Jr. it&#8217;s OK to call him a &#8220;f**&#8221;</h1>
+<div class="entry-teaser">
+&quot;You can call me whatever you want. You could call me a f** right now and it wouldn&#039;t mean anything to me.&quot; </div>
+<div class="entry-meta">
+<span class="entry-author">
+By <a href="https://www.lgbtqnation.com/author/alexbollinger/" title="Posts by Alex Bollinger" rel="author">Alex Bollinger</a> </span>
+<time class="time published" datetime="2019-11-13T15:17:41-05:00" title="Wednesday, November 13, 2019 pm30 15:17:41">Wednesday, November 13, 2019</time>
+&nbsp; &nbsp; <a href="https://www.lgbtqnation.com/2019/11/gay-right-winger-dave-rubin-tells-donald-trump-jr-ok-call-f/#disqus_thread"> </a>
+</div>
+</div>
+</header>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="main-col" role="main">
+<article class="mnmd-block post--single post-291941 post type-post status-publish format-standard has-post-thumbnail hentry category-bias-watch tag-dave-rubin tag-donald-trump-jr tag-gay-conservatives tag-gay-republicans tag-slade tag-the-rubin-report">
+<div class="single-content">
+<div class="single-entry-thumb"><img src="https://lgbtqnation-assets.imgix.net/2019/11/dave-rubin-donald-trump-jr.jpg?w=790&h=530&fit=crop&auto=format&auto=compress&crop=faces" width=790 height=530 title="dave-rubin-donald-trump-jr" alt="Dave Rubin"><div class="single-entry-thumb-caption"><span>Dave Rubin<small class="photo-credit">Photo: Screenshot/via YouTube</small></span></div></div> <div class="single-body entry-content">
+<p>Dave Rubin had Donald Trump&rsquo;s son on his show, and he told Junior that it&rsquo;s OK to call him a &ldquo;fag&rdquo; now that marriage equality has been legalized.</p>
+<p>Trump Jr. has been doing a media tour to promote his very deep, very thoughtful new book entitled <em>Triggered: How the Left Thrives on Hate and Wants to Silence Us</em>. A big part of promoting the book has been <a href="https://www.lgbtqnation.com/2019/11/donald-trump-jr-says-trans-athletes-want-abuse-women-steal-trophies/">attacking trans women in sports</a> in order to take attention away from the massive discrimination transgender people face.</p>
+<p><strong>Related: <a href="https://www.lgbtqnation.com/2019/10/tucker-carlson-gay-rightwinger-blame-california-wildfires-lgbtq-people-minorities/">Tucker Carlson &amp; gay rightwinger blame California wildfires on hiring LGBTQ people</a></strong></p><div class="ad-300 inline" id="div-gpt-ad-inarticle1"><script type="e503e72ff23138cd5f096b74-text/javascript">AdBridg.cmd.push(function() { AdBridg.display("div-gpt-ad-inarticle1"); });</script></div>
+<p>On Monday, he was on a streamed interview on <em>The Rubin Report</em>, and he got on the topic of transgender people. Trump Jr. started saying that gay people are somehow being hurt by the fight for transgender equality. He did not denounce any of his father&rsquo;s moves to take away gay people&rsquo;s rights because Trump Jr., as a straight man, decided that the real threat to gay equality is transgender equality, not the Republican Party.</p>
+<p>&ldquo;It&rsquo;s a constant movement of destruction, because to lift somebody, you always have to take somebody down,&rdquo; Rubin said, explaining how conservatives understand the world.</p>
+<p>&ldquo;One day I&rsquo;m going to have to do a podcast and ask you as a gay man, what are your thoughts as it relates to, sorta, outspoken activists, homosexual people getting owned by the trans movement and like it&rsquo;s not enough,&rdquo; Trump responded. &ldquo;After all these years that you guys fought to get the equality that you have that people probably pretend doesn&rsquo;t exist anyway.&rdquo;</p>
+<p>&ldquo;All I ever wanted was exact equality under the law,&rdquo; said Rubin, who&rsquo;s gay. &ldquo;That&rsquo;s what we&rsquo;ve got. Now we&rsquo;re equal.&rdquo;</p><div class="ad-300 inline" id="div-gpt-ad-inarticle2"><script type="e503e72ff23138cd5f096b74-text/javascript">AdBridg.cmd.push(function() { AdBridg.display("div-gpt-ad-inarticle2"); });</script></div>
+<p>&ldquo;You can call me whatever you want. You could call me a fag right now and it wouldn&rsquo;t mean anything to me.&rdquo;</p>
+<div class="">
+<blockquote class="twitter-tweet" data-width="500" data-dnt="true">
+<p lang="en" dir="ltr">I try not to go too negative on the tl, but this bootlicking, soulless, untalented hack motherfucker telling the president&rsquo;s large adult son he can call him a faggot is one of the most pathetic things I&rsquo;ve ever seen <a href="https://t.co/FsWTK9qRmI">pic.twitter.com/FsWTK9qRmI</a></p>
+<p>&mdash; Slade (@Slade) <a href="https://twitter.com/Slade/status/1194378276728459265?ref_src=twsrc%5Etfw">November 12, 2019</a></p></blockquote>
+<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8" type="e503e72ff23138cd5f096b74-text/javascript"></script></p></div>
+<p>If the son of the president of the United States called a gay man a &ldquo;fag&rdquo;? That might not mean anything to someone with no self-respect like Dave Rubin, but it would be a big deal.</p>
+<p>The ideas that gay people are now fully equal, no longer face discrimination (or if they do, it&rsquo;s so minor that it&rsquo;s not even worth addressing), no longer face hatred that&rsquo;s more than the occasional bad word, are popular among conservatives &ndash; even gay conservatives &ndash; as well as some pockets on the left. It&rsquo;s ludicrous to people who pay attention to <a href="https://www.lgbtqnation.com/2017/04/report-gay-straight-pay-gap-3000-tech-jobs/">studies about discrimination</a>, who read <a href="https://www.lgbtqnation.com/2019/11/anti-lgbtq-hate-crimes-rise-hate-crime-murders-reach-27-year-high/">statistics about hate crimes</a>&hellip; who just follow the LGBTQ news.</p><div class="ad-300 inline" id="div-gpt-ad-inarticle3"><script type="e503e72ff23138cd5f096b74-text/javascript">AdBridg.cmd.push(function() { AdBridg.display("div-gpt-ad-inarticle3"); });</script></div>
+<p>But the impulse is real, the impulse to pretend that everything is fine for an oppressed minority so nothing needs to change.</p>
+<p>Anyway, neither Rubin nor Junior explained how transgender rights take anything away from gay people. It&rsquo;s counterintuitive since, if anything, increasing acceptance for people to live their own truths when it comes to gender identity and expression will only increase acceptance for cis gay people.</p>
+<p>Trump Jr. was apparently not even listening at that moment and he continued to rail on about how LGBTQ people don&rsquo;t even want equality: &ldquo;They actually don&rsquo;t want equality. They want more than equality. Everyone needs some sort of form of reparations.&rdquo;</p><div class="ad-300 inline" id="div-gpt-ad-inarticle4"><script type="e503e72ff23138cd5f096b74-text/javascript">AdBridg.cmd.push(function() { AdBridg.display("div-gpt-ad-inarticle4"); });</script></div>
+<p>Which&hellip; of course he said that. He is opposed to LGBTQ equality. He is concern trolling the LGBTQ movement by saying it&rsquo;s a zero-sum game between gay rights and trans rights.</p>
+<p>The interview continued and the main takeaway is that Trump Jr. is the real oppressed minority.</p>
+<p>The relevant exchange starts at around the 15-minute mark.</p><div class="ad-300 inline" id="div-gpt-ad-inarticle5"><script type="e503e72ff23138cd5f096b74-text/javascript">AdBridg.cmd.push(function() { AdBridg.display("div-gpt-ad-inarticle5"); });</script></div>
+<div class="youtube embed-responsive embed-responsive-16by9"><iframe title="The View, Whistleblowers, &amp; Trump Impeachment Inquiry | Donald Trump Jr. | POLITICS | Rubin Report" width="500" height="281" src="https://www.youtube.com/embed/twZXsp00bl4?feature=oembed&amp;enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<script data-cfasync="false">__gaTracker('send', 'event', 'Teads', 'Article-NotIncluded', document.querySelector("link[rel='canonical']").getAttribute("href") , 1, { nonInteraction: true });</script><script type="e503e72ff23138cd5f096b74-text/javascript">
+			(function($) {
+				if (document.location.href.search("fb_action_types=")!=-1){
+					//fbclid
+				// Track traffic from Facebook Like & Send as Campaign traffic
+					if (url_query('fb_ref')) {
+						__gaTracker('set', 'campaignSource', 'facebook_'+url_query('fb_ref'));
+					} else {
+						__gaTracker('set', 'campaignSource', 'facebook_'+url_query('fb_action_types'));
+					}
+					__gaTracker('set', 'campaignName', 'FacebookShare');
+					__gaTracker('set', 'campaignMedium', 'social');
+					__gaTracker('set', 'campaignContent', url_query('fb_action_ids'));
+				}
+
+			})(jQuery);
+		</script>
+<div class="pagination">
+</div>
+</div>
+<div class="row entry-footer clearfix">
+<div class="entry-categories col-sm-4">
+<i class="mdicon mdicon-folder"></i> <a href="https://www.lgbtqnation.com/bias-watch/">Bias Watch</a>
+</div>
+<div class="entry-tags col-sm-8">
+<i class="mdicon mdicon-local_offer"></i> <a href="https://www.lgbtqnation.com/tag/dave-rubin/" rel="tag">Dave Rubin</a>, <a href="https://www.lgbtqnation.com/tag/donald-trump-jr/" rel="tag">Donald Trump Jr.</a>, <a href="https://www.lgbtqnation.com/tag/gay-conservatives/" rel="tag">gay conservatives</a>, <a href="https://www.lgbtqnation.com/tag/gay-republicans/" rel="tag">gay Republicans</a>, <a href="https://www.lgbtqnation.com/tag/slade/" rel="tag">Slade</a>, <a href="https://www.lgbtqnation.com/tag/the-rubin-report/" rel="tag">The Rubin Report</a> </div>
+</div>
+</div>
+</article>
+<div class="mobile-ad-leader" id="div-gpt-ad-inline1">
+<script type="e503e72ff23138cd5f096b74-text/javascript">
+	AdBridg.cmd.push(function() { AdBridg.display('div-gpt-ad-inline1'); });
+	</script>
+</div>
+<script type="application/ld+json">
+	{
+	  "@context": "http://schema.org",
+	  "@type": "NewsArticle",
+		"mainEntityOfPage": {
+			"@type": "WebPage",
+			"@id": "https://www.lgbtqnation.com/2019/11/gay-right-winger-dave-rubin-tells-donald-trump-jr-ok-call-f/"
+		},
+	  "headline": "Gay right-winger Dave Rubin tells Donald Trump Jr. it&#8217;s OK to call him a &#8220;f**&#8221;",
+	  	  "image": {
+	          "@type": "ImageObject",
+	          "url": "https://lgbtqnation-assets.s3.amazonaws.com/assets/2019/11/dave-rubin-donald-trump-jr-321x181.jpg",
+	          "height": "500",
+	          "width": "338"
+	    },
+			  "datePublished": "2019-11-13T15:17:41-05:00",
+	  "dateModified": "2019-11-13T15:45:23-05:00",
+	  "author": {
+			"@type": "Person",
+			"name": "Alex Bollinger"	  },
+	  "publisher": {
+		 "@type": "Organization",
+		 "name": "LGBTQ Nation",
+		 "url": "https://www.lgbtqnation.com/",
+		 "logo": {"@type": "ImageObject","url": "https://static.lgbtqnation.com/images/logos/lgbtq-nation-logo-new-410x60.png","height": "410","width": "60"},
+		 "address": {"@type": "PostalAddress","streetAddress": "584 Castro St. #623","addressLocality": "San Francisco","addressRegion": "CA","postalCode": "94114","addressCountry": "USA"},
+		 "sameAs": ["https://en.wikipedia.org/wiki/Queerty","https://www.facebook.com/lgbtqnation","https://www.twitter.com/lgbtqnation","https://www.youtube.com/user/LGBTQNation"]
+	  },
+
+	  "description": "\"You can call me whatever you want. You could call me a f** right now and it wouldn't mean anything to me.\""	}
+</script>
+
+<div class="posts-navigation single-entry-section clearfix">
+<div class="posts-navigation__prev">
+<article class="prev-next-article">
+<div class="background-img" style="background-image: url('https://lgbtqnation-assets.imgix.net/2019/11/lgbtq-veterans-benefits.jpg?w=400&h=225&fit=crop&auto=format&auto=compress&crop=faces')"></div>
+<div class="prev-next-text">
+<h3 class="post-title">Rhode Island &#038; New York restore military benefits to LGBTQ veterans</h3>
+</div>
+<a href="https://www.lgbtqnation.com/2019/11/rhode-island-new-york-restore-military-benefits-dishonorably-discharged-lgbtq-veterans/" class="link-overlay"></a>
+</article>
+<a class="posts-navigation__label" href="https://www.lgbtqnation.com/2019/11/rhode-island-new-york-restore-military-benefits-dishonorably-discharged-lgbtq-veterans/"><span><i class="mdicon mdicon-arrow_back"></i> Previous article</span></a>
+</div>
+<div class="posts-navigation__next">
+<article class="prev-next-article">
+<div class="background-img" style="background-image: url('https://lgbtqnation-assets.imgix.net/2019/11/pissi-myles-drag-queen-impeachment.jpg?w=400&h=225&fit=crop&auto=format&auto=compress&crop=faces')"></div>
+<div class="prev-next-text">
+<h3 class="post-title">A drag queen news reporter snatched wigs at the Trump impeachment hearings</h3>
+</div>
+<a href="https://www.lgbtqnation.com/2019/11/drag-queen-news-reporter-snatched-wigs-trump-impeachment-hearings/" class="link-overlay"></a>
+</article>
+<a class="posts-navigation__label" href="https://www.lgbtqnation.com/2019/11/drag-queen-news-reporter-snatched-wigs-trump-impeachment-hearings/"><span> Next article <i class="mdicon mdicon-arrow_forward"></i></span></a>
+</div>
+</div>
+<br /><div id="5d8160137a51ca744a7dc33d" class="vdb_player vdb_5d8160137a51ca744a7dc33d57d325e276a6057ba4a05a00"><script type="e503e72ff23138cd5f096b74-text/javascript" src="https://delivery.vidible.tv/jsonp/pid=5d8160137a51ca744a7dc33d/57d325e276a6057ba4a05a00.js?"></script></div>
+</div>
+<div class="sub-col sidebar js-sticky-sidebar sidebar-article-body" role="complementary">
+<div class="theiaStickySidebar">
+<div class="recent-stories-module module">
+<div class="heading-wrap heading-line">
+<h4 class="module-header">Election <span>2020</span></h4>
+</div>
+<ul class="posts-list">
+<li class="list-item clearfix">
+<div class="thumb">
+<a href="https://www.lgbtqnation.com/2019/11/andrew-yang-freedom-dividend-will-create-accepting-nation/"><img width="104" height="70" src="https://lgbtqnation-assets.imgix.net/2019/10/lgbtq-2020-election-andrew-yang.jpg?w=104&h=70&fit=crop&auto=format&auto=compress&crop=faces" alt=""></a>
+</div>
+<div class="post-info">
+<h3><a href="https://www.lgbtqnation.com/2019/11/andrew-yang-freedom-dividend-will-create-accepting-nation/">Andrew Yang on how a "freedom dividend" will create a more accepting nation</a></h3>
+</div>
+</li>
+<li class="list-item clearfix">
+<div class="thumb">
+<a href="https://www.lgbtqnation.com/2019/09/long-shot-presidential-candidate-joe-sestak-going-make-sure-youre-good/"><img width="104" height="70" src="https://lgbtqnation-assets.imgix.net/2019/09/2020-LGBTQ-Interview-Joe-Sestak.jpg?w=104&h=70&fit=crop&auto=format&auto=compress&crop=faces" alt=""></a>
+</div>
+<div class="post-info">
+<h3><a href="https://www.lgbtqnation.com/2019/09/long-shot-presidential-candidate-joe-sestak-going-make-sure-youre-good/">Long-shot presidential candidate Joe Sestak is going to make sure 'you're good!'</a></h3>
+</div>
+</li>
+</ul>
+</div>
+<div class="recent-stories-module module">
+<div class="heading-wrap heading-line">
+<h4 class="module-header">Latest <span>Stories</span></h4>
+</div>
+<ul class="posts-list">
+<li class="list-item clearfix">
+<div class="thumb">
+<a href="https://www.lgbtqnation.com/2019/11/drag-queen-news-reporter-snatched-wigs-trump-impeachment-hearings/"><img width="104" height="70" src="https://lgbtqnation-assets.imgix.net/2019/11/pissi-myles-drag-queen-impeachment.jpg?w=104&h=70&fit=crop&auto=format&auto=compress&crop=faces" alt=""></a>
+</div>
+<div class="post-info">
+<h3><a href="https://www.lgbtqnation.com/2019/11/drag-queen-news-reporter-snatched-wigs-trump-impeachment-hearings/">A drag queen news reporter snatched wigs at the Trump impeachment hearings</a></h3>
+</div>
+</li>
+<li class="list-item clearfix">
+<div class="thumb">
+<a href="https://www.lgbtqnation.com/2019/11/rhode-island-new-york-restore-military-benefits-dishonorably-discharged-lgbtq-veterans/"><img width="104" height="70" src="https://lgbtqnation-assets.imgix.net/2019/11/lgbtq-veterans-benefits.jpg?w=104&h=70&fit=crop&auto=format&auto=compress&crop=faces" alt=""></a>
+</div>
+<div class="post-info">
+<h3><a href="https://www.lgbtqnation.com/2019/11/rhode-island-new-york-restore-military-benefits-dishonorably-discharged-lgbtq-veterans/">Rhode Island & New York restore military benefits to LGBTQ veterans</a></h3>
+</div>
+</li>
+<li class="list-item clearfix">
+<div class="thumb">
+<a href="https://www.lgbtqnation.com/2019/11/anti-lgbtq-hate-crimes-rise-hate-crime-murders-reach-27-year-high/"><img width="104" height="70" src="https://lgbtqnation-assets.imgix.net/2019/11/hate-crimes-fbi.jpg?w=104&h=70&fit=crop&auto=format&auto=compress&crop=faces" alt=""></a>
+</div>
+<div class="post-info">
+<h3><a href="https://www.lgbtqnation.com/2019/11/anti-lgbtq-hate-crimes-rise-hate-crime-murders-reach-27-year-high/">Anti-LGBTQ hate crimes are on the rise as hate crime murders reach 27-year high</a></h3>
+</div>
+</li>
+<li class="list-item clearfix">
+<div class="thumb">
+<a href="https://www.lgbtqnation.com/2019/11/american-tourist-thailand-caught-unhinged-racist-homophobic-tirade/"><img width="104" height="70" src="https://lgbtqnation-assets.imgix.net/2019/11/Daniel-Franckowiak.jpg?w=104&h=70&fit=crop&auto=format&auto=compress&crop=faces" alt=""></a>
+</div>
+<div class="post-info">
+<h3><a href="https://www.lgbtqnation.com/2019/11/american-tourist-thailand-caught-unhinged-racist-homophobic-tirade/">American tourist in Thailand caught in unhinged racist & homophobic tirade</a></h3>
+</div>
+</li>
+</ul>
+</div>
+<div class="ad-300 sidebar-ad-1" id="div-gpt-ad-box1">
+<script type="e503e72ff23138cd5f096b74-text/javascript">
+	AdBridg.cmd.push(function() { AdBridg.display('div-gpt-ad-box1'); });
+	</script>
+</div>
+</div>
+</div>
+</div>
+<a name="disqus_thread"></a>
+<div id="disqus_loader" class="row show-comments-prompt">
+<button class="show-comments-button">Show Comments (<span class="disqus-comment-count" data-disqus-url="https://www.lgbtqnation.com/2019/11/gay-right-winger-dave-rubin-tells-donald-trump-jr-ok-call-f/"> </span>)</button>
+</div>
+<div class="row comments-container" style="display:none;">
+<div class="main-col" role="main">
+<div class="comments-holder">
+<div id="disqus_thread"></div>
+<script type="e503e72ff23138cd5f096b74-text/javascript">
+					   (function($) {
+							var disqus_config=function(){
+								this.page.url='https://www.lgbtqnation.com/2019/11/gay-right-winger-dave-rubin-tells-donald-trump-jr-ok-call-f/';
+								this.page.identifier='291941 https://www.lgbtqnation.com/?p=291941';
+								this.page.title='Gay right-winger Dave Rubin tells Donald Trump Jr. it&#8217;s OK to call him a &#8220;f**&#8221;';
+								this.page.postId=291941;
+							}
+												   
+							$('.show-comments-button').on( "click", function() {
+								console.log( "clicks" );
+								$.ajaxSetup({cache:true});
+								$.ajaxSetup({cache:false});
+								$(".comments-container").show();
+								$("#disqus_loader").remove();
+
+								 $('#ad-2-injection-spot').append('<div class="ad-300 sidebar-ad-2" id="div-gpt-ad-box2"><script>AdBridg.cmd.push(function() { AdBridg.display(\'div-gpt-ad-box2\');});' + '</' + 'script></div>');
+								//AdBridg.cmd.push(function() {
+								//	AdBridg.display('div-gpt-ad-box2');
+								//	});
+								//return false;
+							});
+
+						    //
+						    //<div class="ad-300 sidebar-ad-2" id="div-gpt-ad-box2"></div>
+						    //
+
+					    })(jQuery);
+
+						</script>
+</div>
+</div>
+<div class="sub-col sidebar js-sticky-sidebar" role="complementary">
+<div class="theiaStickySidebar">
+<div id="ad-2-injection-spot"></div>
+
+</div>
+</div>
+</div>
+<div class="row single-more-articles">
+<div class="main-col" role="main">
+<div class="single-entry-section">
+<div class="heading-wrap heading-line">
+<h4 class="module-header">More in Bias Watch</h4>
+</div>
+<ul class="posts-list">
+<li class="list-item clearfix">
+<div class="thumb">
+<a href="https://www.lgbtqnation.com/2019/11/another-republican-wants-ban-gender-affirming-medical-treatment-youth/"><img width="158" height="112" src="https://lgbtqnation-assets.imgix.net/2019/11/IMG_0057.png?w=219&h=156&fit=crop&auto=format&auto=compress&crop=faces" alt="Another Republican wants to ban gender-affirming medical treatment for youth"></a>
+</div>
+<div class="post-info">
+<h3><a href="https://www.lgbtqnation.com/2019/11/another-republican-wants-ban-gender-affirming-medical-treatment-youth/">Another Republican wants to ban gender-affirming medical treatment for youth</a></h3>
+<div class="excerpt"><p>Georgia Rep. Ginny Ehrhart claims an &#8216;epidemic&#8217; of transgender children influenced her to begin raising awareness for her bill proposal &#8211; that she hasn&#8217;t written yet.</p>
+</div>
+</div>
+</li><li class="list-item clearfix">
+<div class="thumb">
+<a href="https://www.lgbtqnation.com/2019/11/former-gay-trans-people-lobbied-congress-oppose-lgbtq-rights/"><img width="158" height="112" src="https://lgbtqnation-assets.imgix.net/2019/11/changed-california.jpg?w=219&h=156&fit=crop&auto=format&auto=compress&crop=faces" alt="&#8216;Former&#8217; gay &#038; trans people lobbied Congress to oppose LGBTQ rights"></a>
+</div>
+<div class="post-info">
+<h3><a href="https://www.lgbtqnation.com/2019/11/former-gay-trans-people-lobbied-congress-oppose-lgbtq-rights/">&#8216;Former&#8217; gay &#038; trans people lobbied Congress to oppose LGBTQ rights</a></h3>
+<div class="excerpt"><p>They claim that Christians are the real oppressed minorities &#038; that conversion therapy doesn&#8217;t exist &#8211; despite going through it themselves.</p>
+</div>
+</div>
+</li><li class="list-item clearfix">
+<div class="thumb">
+<a href="https://www.lgbtqnation.com/2019/10/tucker-carlson-gay-rightwinger-blame-california-wildfires-lgbtq-people-minorities/"><img width="158" height="112" src="https://lgbtqnation-assets.imgix.net/2019/10/tucker-carlson-dave-rubin.jpg?w=219&h=156&fit=crop&auto=format&auto=compress&crop=faces" alt="Tucker Carlson &#038; gay rightwinger blame California wildfires on hiring LGBTQ people"></a>
+</div>
+<div class="post-info">
+<h3><a href="https://www.lgbtqnation.com/2019/10/tucker-carlson-gay-rightwinger-blame-california-wildfires-lgbtq-people-minorities/">Tucker Carlson &#038; gay rightwinger blame California wildfires on hiring LGBTQ people</a></h3>
+<div class="excerpt"><p>They blamed the fires on unqualified black and LGBTQ firefighters. Hiring them means California is &#8220;not civilized anymore.&#8221;</p>
+</div>
+</div>
+</li><li class="list-item clearfix">
+<div class="thumb">
+<a href="https://www.lgbtqnation.com/2019/10/street-preachers-hate-speech-drowned-two-music-students-saxophones/"><img width="158" height="112" src="https://lgbtqnation-assets.imgix.net/2019/10/saxophone-hate-preacher-nyc.jpg?w=219&h=156&fit=crop&auto=format&auto=compress&crop=faces" alt="Street preacher&#8217;s hate speech drowned out by two music students with saxophones"></a>
+</div>
+<div class="post-info">
+<h3><a href="https://www.lgbtqnation.com/2019/10/street-preachers-hate-speech-drowned-two-music-students-saxophones/">Street preacher&#8217;s hate speech drowned out by two music students with saxophones</a></h3>
+<div class="excerpt"><p>The preacher was trying to warn the public about &#8220;the homosexual community.&#8221; These musicians weren&#8217;t having it.</p>
+</div>
+</div>
+</li><li class="list-item clearfix">
+<div class="thumb">
+<a href="https://www.lgbtqnation.com/2019/10/outraged-conservatives-say-ad-underwear-totally-destroys-gender-lines-kids/"><img width="158" height="112" src="https://lgbtqnation-assets.imgix.net/2019/10/thinx-menstruation-commercial.jpg?w=219&h=156&fit=crop&auto=format&auto=compress&crop=faces" alt="Outraged conservatives say this ad for underwear &#8216;totally destroys gender lines&#8217; for kids"></a>
+</div>
+<div class="post-info">
+<h3><a href="https://www.lgbtqnation.com/2019/10/outraged-conservatives-say-ad-underwear-totally-destroys-gender-lines-kids/">Outraged conservatives say this ad for underwear &#8216;totally destroys gender lines&#8217; for kids</a></h3>
+<div class="excerpt"><p>They say the ad for a menstrual product is &#8220;twisted,&#8221; &#8220;crass,&#8221; and &#8220;damaging to young people who are already navigating the uncertainties of puberty amidst the constant push of liberal agendas.&#8221;</p>
+</div>
+</div>
+</li><li class="list-item clearfix">
+<div class="thumb">
+<a href="https://www.lgbtqnation.com/2019/10/keynote-republican-speaker-fundraiser-calls-buttigieg-mayor-pete-buttplug/"><img width="158" height="112" src="https://lgbtqnation-assets.imgix.net/2018/11/coach-dave.jpg?w=219&h=156&fit=crop&auto=format&auto=compress&crop=faces" alt="Keynote Republican speaker at fundraiser calls Buttigieg &#8216;Mayor Pete Buttplug&#8217;"></a> 
+</div>
+<div class="post-info">
+<h3><a href="https://www.lgbtqnation.com/2019/10/keynote-republican-speaker-fundraiser-calls-buttigieg-mayor-pete-buttplug/">Keynote Republican speaker at fundraiser calls Buttigieg &#8216;Mayor Pete Buttplug&#8217;</a></h3>
+<div class="excerpt"><p>&#8220;We need to make homosexuality unthinkable again. It needs to go back in the closet.”</p>
+</div>
+</div>
+</li><li class="list-item clearfix">
+<div class="thumb">
+<a href="https://www.lgbtqnation.com/2019/10/human-rights-commissioner-slurred-lgbtq-people-repeatedly-wont-forced-resign/"><img width="158" height="112" src="https://lgbtqnation-assets.imgix.net/2019/10/kenick-el-screenshot.jpg?w=219&h=156&fit=crop&auto=format&auto=compress&crop=faces" alt="A human rights commissioner slurred LGBTQ people repeatedly &#038; won&#8217;t be forced to resign"></a>
+</div>
+<div class="post-info">
+<h3><a href="https://www.lgbtqnation.com/2019/10/human-rights-commissioner-slurred-lgbtq-people-repeatedly-wont-forced-resign/">A human rights commissioner slurred LGBTQ people repeatedly &#038; won&#8217;t be forced to resign</a></h3>
+<div class="excerpt"><p>The chair issued a statement defending him, saying the commission is a &#8220;very diverse group of individuals.&#8221;</p>
+</div>
+</div>
+</li><li class="list-item clearfix">
+<div class="thumb">
+<a href="https://www.lgbtqnation.com/2019/10/hate-group-leader-helped-ring-new-york-stock-exchange-bell/"><img width="158" height="112" src="https://lgbtqnation-assets.imgix.net/2019/10/TimothyPlan-Staver.jpg?w=219&h=156&fit=crop&auto=format&auto=compress&crop=faces" alt="A hate group leader helped ring the New York Stock Exchange bell"></a>
+</div>
+<div class="post-info">
+<h3><a href="https://www.lgbtqnation.com/2019/10/hate-group-leader-helped-ring-new-york-stock-exchange-bell/">A hate group leader helped ring the New York Stock Exchange bell</a></h3>
+<div class="excerpt"><p>He was celebrating the listings of &#8220;biblically responsible&#8221; funds. In other words, companies that don&#8217;t support LGBTQ rights.</p>
+</div>
+</div>
+</li><li class="list-item clearfix">
+<div class="thumb">
+<a href="https://www.lgbtqnation.com/2019/10/milo-yiannopoulos-apparently-sold-website-hes-starved-cash/"><img width="158" height="112" src="https://lgbtqnation-assets.imgix.net/2017/11/Milo-Yiannopoulos-resigns.jpg?w=219&h=156&fit=crop&auto=format&auto=compress&crop=faces" alt="Milo Yiannopoulos apparently sold his website because he&#8217;s starved for cash"></a>
+</div>
+<div class="post-info">
+<h3><a href="https://www.lgbtqnation.com/2019/10/milo-yiannopoulos-apparently-sold-website-hes-starved-cash/">Milo Yiannopoulos apparently sold his website because he&#8217;s starved for cash</a></h3>
+<div class="excerpt"><p>He was just saying that he couldn&#8217;t &#8220;put food on the table.&#8221; Now he has sold his website. Is he done?</p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sub-col sidebar js-sticky-sidebar" role="complementary">
+<div class="theiaStickySidebar">
+<div class="ad-300 sidebar-ad-3" id="div-gpt-ad-box3">
+<script type="e503e72ff23138cd5f096b74-text/javascript">
+	AdBridg.cmd.push(function() { AdBridg.display('div-gpt-ad-box3'); });
+	</script>
+</div>
+<div id="civsci-id-349135350" data-civicscience-widget="4e5bcad9-b59b-7fe4-c96a-9af7dd3ed408"></div>
+<script type="e503e72ff23138cd5f096b74-text/javascript" async src="https://www.civicscience.com/jspoll/4/civicscience-widget.js"></script>
+<div class="sidebar-newsletter-prompt">
+<div class="newsletter-logo">
+<img src="/images/logos/lgbtq-nation-logo.svg" alt="LGBTQ Nation">
+</div>
+<h4>Get the Daily Brief</h4>
+The news you care about, reported on by the people who care about you.
+<form action="https://lgbtqnation.us1.list-manage.com/subscribe/post?u=ecab442566f15d8d4dcf64b0d&amp;id=c4eab596bd" method="post" name="mc-embedded-subscribe-form" target="_blank">
+<input type="hidden" value="1" name="group[5433][1]">
+<input type="hidden" value="2" name="group[5433][2]">
+<input type="hidden" value="4" name="group[5433][4]">
+<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ecab442566f15d8d4dcf64b0d_c4eab596bd" tabindex="-1" value=""></div>
+<div class="fields">
+<input type="email" value="" name="EMAIL" class="required email" placeholder="Email address"><input type="submit" value="Subscribe" name="subscribe" class="button">
+</div>
+</form>
+</div> </div>
+</div>
+</div>
+<div class="row single-bottom-ad">
+<div id="div-gpt-ad-leader2">
+<script type="e503e72ff23138cd5f096b74-text/javascript">
+					AdBridg.cmd.push(function() { AdBridg.display('div-gpt-ad-leader2'); });
+					</script>
+</div>
+</div>
+</div>
+</div>
+<footer class="site-footer">
+<div class="container site-footer-section">
+<div class="site-footer-left">
+<div class="site-logo">
+<a href="https://www.lgbtqnation.com">
+<img src="/images/logos/lgbtq-nation-logo-stacked-white.svg" alt="LGBTQ Nation News & Opinion" class="footer-logo" />
+</a>
+</div>
+</div>
+<div class="site-footer-right">
+<ul class="social-list">
+<li><a href="https://mailchi.mp/lgbtqnation.com/subscribe" target="_blank" rel="noopener"><i class="mdicon mdicon-mail_outline"></i></a></li>
+<li><a href="https://facebook.com/lgbtqnation" target="_blank" rel="noopener"><i class="mdicon mdicon-facebook"></i></a></li>
+<li><a href="https://twitter.com/lgbtqnation" target="_blank" rel="noopener"><i class="mdicon mdicon-twitter"></i></a></li>
+<li><a href="https://instagram.com/lgbtqnation" target="_blank" rel="noopener"><i class="mdicon mdicon-instagram"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="container site-footer-section">
+<div class="site-footer-left footer-copyright">
+&copy; 2010 - 2019 LGBTQ Nation, All Rights Reserved.
+<br>
+<a href="/about-lgbtq/">About Us</a> &bull;
+<a href="/contact-us/">Contact Us</a> &bull;
+<a href="/privacy/">Privacy</a> &bull;
+<a href="/terms-of-service/">Terms of Service</a> &bull;
+Our other sites: <a href="https://www.gaycities.com/" title="gay travel">GayCities</a> &bull;
+<a href="https://www.queerty.com/" title="pop culture">Queerty</a>
+</div>
+<div class="site-footer-right">
+<a href='https://www.q.digital'><img src="/images/logos/q-digital-logo-dark-gradient.png" alt="Q.Digital - LGBTQ Owned" width="90" class="qdigital-logo"><br>Advertise with us</a>
+</div>
+</div>
+<div class="rainbow-bar"></div>
+</footer>
+
+<script type="e503e72ff23138cd5f096b74-text/javascript">
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "32666898" });
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+  })();
+</script>
+<noscript>
+  <img src="https://sb.scorecardresearch.com/p?c1=2&c2=32666898&cv=2.0&cj=1" alt="Comscore Measurement" />
+</noscript>
+
+<script type="e503e72ff23138cd5f096b74-text/javascript">
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '686853021424163');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height='1' width='1' style='display:none'
+  src='https://www.facebook.com/tr?id=686853021424163&ev=PageView&noscript=1'
+/></noscript>
+
+<script type="e503e72ff23138cd5f096b74-text/javascript">
+  fbq('track', 'ViewContent');
+</script>
+
+<script type="e503e72ff23138cd5f096b74-text/javascript">
+	var _qevents = _qevents || [];
+	
+	(function() {
+	var elem = document.createElement('script');
+	elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+	elem.async = true;
+	elem.type = "text/javascript";
+	var scpt = document.getElementsByTagName('script')[0];
+	scpt.parentNode.insertBefore(elem, scpt);
+	})();
+	
+	_qevents.push({
+	qacct:"p-3a_FtJ1e9ZPvw"
+	});
+	</script>
+<noscript>
+	<div style="display:none;">
+	<img src="//pixel.quantserve.com/pixel/p-3a_FtJ1e9ZPvw.gif" border="0" height="1" width="1" alt="Quantcast"/>
+	</div>
+	</noscript>
+
+<div id="om-cz5ftynarx6ryt5eqdpt-holder"></div><script type="e503e72ff23138cd5f096b74-text/javascript">var cz5ftynarx6ryt5eqdpt,cz5ftynarx6ryt5eqdpt_poll=function(){var r=0;return function(n,l){clearInterval(r),r=setInterval(n,l)}}();!function(e,t,n){if(e.getElementById(n)){cz5ftynarx6ryt5eqdpt_poll(function(){if(window['om_loaded']){if(!cz5ftynarx6ryt5eqdpt){cz5ftynarx6ryt5eqdpt=new OptinMonsterApp();return cz5ftynarx6ryt5eqdpt.init({"u":"40711.804750","staging":0,"dev":0,"beta":0});}}},25);return;}var d=false,o=e.createElement(t);o.id=n,o.src="https://a.opmnstr.com/app/js/api.min.js",o.async=true,o.onload=o.onreadystatechange=function(){if(!d){if(!this.readyState||this.readyState==="loaded"||this.readyState==="complete"){try{d=om_loaded=true;cz5ftynarx6ryt5eqdpt=new OptinMonsterApp();cz5ftynarx6ryt5eqdpt.init({"u":"40711.804750","staging":0,"dev":0,"beta":0});o.onload=o.onreadystatechange=null;}catch(t){}}}};(document.getElementsByTagName("head")[0]||document.documentElement).appendChild(o)}(document,"script","omapi-script");</script><script type="e503e72ff23138cd5f096b74-text/javascript" src="https://a.opmnstr.com/app/js/api.min.js" data-campaign="auv5wwgrrfcvpyobsmnm" data-user="40711" data-env="production"></script> <script type="e503e72ff23138cd5f096b74-text/javascript">var cz5ftynarx6ryt5eqdpt_shortcode = true;var auv5wwgrrfcvpyobsmnm_shortcode = true;</script>
+<script type="e503e72ff23138cd5f096b74-text/javascript">
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"lgbtqnation"};
+/* ]]> */
+</script>
+<script type="e503e72ff23138cd5f096b74-text/javascript" src='https://www.lgbtqnation.com/content/plugins/disqus-comment-system/public/js/comment_count.js?ver=3.0.17'></script>
+<script type="e503e72ff23138cd5f096b74-text/javascript">
+/* <![CDATA[ */
+var embedVars = {"disqusConfig":{"integration":"wordpress 3.0.17"},"disqusIdentifier":"291941 https:\/\/www.lgbtqnation.com\/?p=291941","disqusShortname":"lgbtqnation","disqusTitle":"Gay right-winger Dave Rubin tells Donald Trump Jr. it\u2019s OK to call him a \u201cf**\u201d","disqusUrl":"https:\/\/www.lgbtqnation.com\/2019\/11\/gay-right-winger-dave-rubin-tells-donald-trump-jr-ok-call-f\/","postId":"291941"};
+/* ]]> */
+</script>
+<script type="e503e72ff23138cd5f096b74-text/javascript" src='https://www.lgbtqnation.com/content/plugins/disqus-comment-system/public/js/comment_embed.js?ver=3.0.17'></script>
+<script type="e503e72ff23138cd5f096b74-text/javascript" src='https://www.lgbtqnation.com/content/themes/lgbtqnation-2019/resources/assets/scripts/theia-sticky-sidebar.min.js?ver=v190501'></script>
+<script type="e503e72ff23138cd5f096b74-text/javascript" src='https://lgbtqnation.disqus.com/count.js'></script>
+<script type="e503e72ff23138cd5f096b74-text/javascript" src='https://www.lgbtqnation.com/wp/wp-includes/js/wp-embed.min.js?ver=5.2.4'></script>
+<script type="e503e72ff23138cd5f096b74-text/javascript" src='https://www.lgbtqnation.com/content/plugins/optinmonster/assets/js/helper.js?ver=1.8.4'></script>
+<script type="e503e72ff23138cd5f096b74-text/javascript">var omapi_localized = { ajax: 'https://www.lgbtqnation.com/wp/wp-admin/admin-ajax.php?optin-monster-ajax-route=1', nonce: 'a143953a15', slugs: {"cz5ftynarx6ryt5eqdpt":{"slug":"cz5ftynarx6ryt5eqdpt","mailpoet":false},"auv5wwgrrfcvpyobsmnm":{"slug":"auv5wwgrrfcvpyobsmnm","mailpoet":false}} };</script>
+<script type="e503e72ff23138cd5f096b74-text/javascript">var omapi_data = {"wc_cart":[],"object_id":291941,"object_key":"post","object_type":"post","term_ids":[26570,29689,15165,42000,10230,48632,29690]};</script>
+<script type="e503e72ff23138cd5f096b74-text/javascript">
+		var disqus_shortname = 'lgbtqnation';
+
+		(function () {
+		var s = document.createElement('script'); s.async = true;
+		s.type = 'text/javascript';
+		s.src = 'http://' + '?show=comments' + disqus_shortname + '.disqus.com/count.js';
+		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+		}());
+		</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/95c75768/cloudflare-static/rocket-loader.min.js" data-cf-settings="e503e72ff23138cd5f096b74-|49" defer=""></script></body>
+</html>
